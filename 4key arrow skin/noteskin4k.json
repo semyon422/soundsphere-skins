@@ -1,0 +1,39 @@
+{
+	"name": "semyon422's 4K skin",
+	"inputMode": {
+		"key": 4
+	},
+	"playfield": "playfield4k.json",
+	"cs": [0.5, 0, 0, 0, "h"],
+	"currentTimePosition": 0.892,
+	"key": {
+		"x": [-0.266, -0.133, 0, 0.133],
+		"w": [0.133, 0.133, 0.133, 0.133],
+		"image": {
+			"ShortNote": [
+				"note/left.png",
+				"note/down.png",
+				"note/up.png",
+				"note/right.png"
+			],
+			"LongNoteHead": [
+				"note/left.png",
+				"note/down.png",
+				"note/up.png",
+				"note/right.png"
+			],
+			"LongNoteTail": [
+				"note/tail.png",
+				"note/tail.png",
+				"note/tail.png",
+				"note/tail.png"
+			],
+			"LongNoteBody": [
+				"note/body.png",
+				"note/body.png",
+				"note/body.png",
+				"note/body.png"
+			]
+		}
+	}
+}

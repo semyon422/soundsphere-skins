@@ -1,0 +1,70 @@
+{
+	"name": "semyon422's 7K1S skin",
+	"inputMode": {
+		"key": 7,
+		"scratch": 1
+	},
+	"playfield": "playfield7K1S.json",
+	"cs": [0, 0, 0, 0, "h"],
+	"currentTimePosition": 0.906,
+	"key": {
+		"x": [0.104, 0.208, 0.312, 0.416, 0.520, 0.624, 0.728],
+		"w": [0.104, 0.104, 0.104, 0.104, 0.104, 0.104, 0.104],
+		"image": {
+			"ShortNote": [
+				"note/white.png",
+				"note/blue.png",
+				"note/white.png",
+				"note/blue.png",
+				"note/white.png",
+				"note/blue.png",
+				"note/white.png"
+			],
+			"LongNoteHead": [
+				"headtail/white.png",
+				"headtail/blue.png",
+				"headtail/white.png",
+				"headtail/blue.png",
+				"headtail/white.png",
+				"headtail/blue.png",
+				"headtail/white.png"
+			],
+			"LongNoteTail": [
+				"headtail/white.png",
+				"headtail/blue.png",
+				"headtail/white.png",
+				"headtail/blue.png",
+				"headtail/white.png",
+				"headtail/blue.png",
+				"headtail/white.png"
+			],
+			"LongNoteBody": [
+				"body/white.png",
+				"body/blue.png",
+				"body/white.png",
+				"body/blue.png",
+				"body/white.png",
+				"body/blue.png",
+				"body/white.png"
+			]
+		}
+	},
+	"scratch": {
+		"x": [0],
+		"w": [0.104],
+		"image": {
+			"ShortNote": [
+				"note/orange.png"
+			],
+			"LongNoteHead": [
+				"headtail/orange.png"
+			],
+			"LongNoteTail": [
+				"headtail/orange.png"
+			],
+			"LongNoteBody": [
+				"body/orange.png"
+			]
+		}
+	}
+}

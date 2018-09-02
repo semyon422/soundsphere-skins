@@ -1,0 +1,86 @@
+{
+	"name": "semyon422's 10K2S skin",
+	"inputMode": {
+		"key": 10,
+		"scratch": 2
+	},
+	"playfield": "playfield10K2S.json",
+	"cs": [0.5, 0, 0, 0, "h"],
+	"currentTimePosition": 0.906,
+	"key": {
+		"x": [-0.520, -0.416, -0.312, -0.208, -0.104, 0, 0.104, 0.208, 0.312, 0.416],
+		"w": [0.104, 0.104, 0.104, 0.104, 0.104, 0.104, 0.104, 0.104, 0.104, 0.104],
+		"image": {
+			"ShortNote": [
+				"note/green.png",
+				"note/white.png",
+				"note/blue.png",
+				"note/white.png",
+				"note/yellow.png",
+				"note/yellow.png",
+				"note/white.png",
+				"note/blue.png",
+				"note/white.png",
+				"note/green.png"
+			],
+			"LongNoteHead": [
+				"headtail/green.png",
+				"headtail/white.png",
+				"headtail/blue.png",
+				"headtail/white.png",
+				"headtail/yellow.png",
+				"headtail/yellow.png",
+				"headtail/white.png",
+				"headtail/blue.png",
+				"headtail/white.png",
+				"headtail/green.png"
+			],
+			"LongNoteTail": [
+				"headtail/green.png",
+				"headtail/white.png",
+				"headtail/blue.png",
+				"headtail/white.png",
+				"headtail/yellow.png",
+				"headtail/yellow.png",
+				"headtail/white.png",
+				"headtail/blue.png",
+				"headtail/white.png",
+				"headtail/green.png"
+			],
+			"LongNoteBody": [
+				"body/green.png",
+				"body/white.png",
+				"body/blue.png",
+				"body/white.png",
+				"body/yellow.png",
+				"body/yellow.png",
+				"body/white.png",
+				"body/blue.png",
+				"body/white.png",
+				"body/green.png"
+			]
+		}
+	},
+	"scratch": {
+		"x": [-0.624, 0.520],
+		"w": [0.104, 0.104],
+		"image": {
+			"ShortNote": [
+				"note/orange.png",
+				"note/orange.png"
+			],
+			"LongNoteHead": [
+				"headtail/orange.png",
+				"headtail/orange.png"
+			],
+			"LongNoteTail": [
+				"headtail/orange.png",
+				"headtail/orange.png"
+			],
+			"LongNoteBody": [
+				"body/orange.png",
+				"body/orange.png"
+			]
+		}
+	}
+}

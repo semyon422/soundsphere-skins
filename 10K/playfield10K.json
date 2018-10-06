@@ -1,0 +1,72 @@
+[
+	{
+		"type": "input",
+		"inputType": "key", "inputIndex": 1,
+		"x": -0.5, "y": 0, "w": 0.1, "h": 1, "layer": 20,
+		"released": "key/key-down-0.png",
+		"pressed": "key/key-down-1.png"
+	},
+	{
+		"type": "input",
+		"inputType": "key", "inputIndex": 2,
+		"x": -0.4, "y": 0, "w": 0.1, "h": 1, "layer": 20,
+		"released": "key/key-up-0.png",
+		"pressed": "key/key-up-1.png"
+	},
+	{
+		"type": "input",
+		"inputType": "key", "inputIndex": 3,
+		"x": -0.3, "y": 0, "w": 0.1, "h": 1, "layer": 20,
+		"released": "key/key-down-0.png",
+		"pressed": "key/key-down-1.png"
+	},
+	{
+		"type": "input",
+		"inputType": "key", "inputIndex": 4,
+		"x": -0.2, "y": 0, "w": 0.1, "h": 1, "layer": 20,
+		"released": "key/key-up-0.png",
+		"pressed": "key/key-up-1.png"
+	},
+	{
+		"type": "input",
+		"inputType": "key", "inputIndex": 5,
+		"x": -0.1, "y": 0, "w": 0.1, "h": 1, "layer": 20,
+		"released": "key/key-down-0.png",
+		"pressed": "key/key-down-1.png"
+	},
+	{
+		"type": "input",
+		"inputType": "key", "inputIndex": 6,
+		"x": 0, "y": 0, "w": 0.1, "h": 1, "layer": 20,
+		"released": "key/key-down-0.png",
+		"pressed": "key/key-down-1.png"
+	},
+	{
+		"type": "input",
+		"inputType": "key", "inputIndex": 7,
+		"x": 0.1, "y": 0, "w": 0.1, "h": 1, "layer": 20,
+		"released": "key/key-up-0.png",
+		"pressed": "key/key-up-1.png"
+	},
+	{
+		"type": "input",
+		"inputType": "key", "inputIndex": 8,
+		"x": 0.2, "y": 0, "w": 0.1, "h": 1, "layer": 20,
+		"released": "key/key-down-0.png",
+		"pressed": "key/key-down-1.png"
+	},
+	{
+		"type": "input",
+		"inputType": "key", "inputIndex": 9,
+		"x": 0.3, "y": 0, "w": 0.1, "h": 1, "layer": 20,
+		"released": "key/key-up-0.png",
+		"pressed": "key/key-up-1.png"
+	},
+	{
+		"type": "input",
+		"inputType": "key", "inputIndex": 10,
+		"x": 0.4, "y": 0, "w": 0.1, "h": 1, "layer": 20,
+		"released": "key/key-down-0.png",
+		"pressed": "key/key-down-1.png"
+	}
+]

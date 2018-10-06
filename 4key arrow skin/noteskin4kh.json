@@ -10,15 +10,15 @@
 		"y": [0.892, 0.892, 0.892, 0.892],
 		"w": [0.133, 0.133, 0.133, 0.133],
 		"h": [0.133, 0.133, 0.133, 0.133],
-		"lnw": [0.133, 0.133, 0.133, 0.133],
-		"lnh": [0, 0, 0, 0],
+		"lnh": [0.133, 0.133, 0.133, 0.133],
+		"lnw": [0, 0, 0, 0],
 		"layer": [10, 10, 10, 10],
-		"fx": [0, 0, 0, 0],
-		"fy": [-1, -1, -1, -1],
+		"fy": [0, 0, 0, 0],
+		"fx": [-1, -1, -1, -1],
 		"ox": [0, 0, 0, 0],
 		"oy": [-0.5, -0.5, -0.5, -0.5],
-		"lnox": [0, 0, 0, 0],
-		"lnoy": [0, 0, 0, 0],
+		"lnox": [0.5, 0.5, 0.5, 0.5],
+		"lnoy": [-0.5, -0.5, -0.5, -0.5],
 		"image": {
 			"ShortNote": [
 				"note/left.png",
@@ -33,16 +33,16 @@
 				"note/right.png"
 			],
 			"LongNoteTail": [
-				"note/tail-up.png",
-				"note/tail-up.png",
-				"note/tail-up.png",
-				"note/tail-up.png"
+				"note/tail-left.png",
+				"note/tail-left.png",
+				"note/tail-left.png",
+				"note/tail-left.png"
 			],
 			"LongNoteBody": [
-				"note/body.png",
-				"note/body.png",
-				"note/body.png",
-				"note/body.png"
+				"note/body-h.png",
+				"note/body-h.png",
+				"note/body-h.png",
+				"note/body-h.png"
 			]
 		}
 	}

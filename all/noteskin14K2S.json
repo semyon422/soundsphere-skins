@@ -1,0 +1,123 @@
+{
+	"name": "semyon422's 14K2S skin",
+	"inputMode": {
+		"key": 14,
+		"scratch": 2
+	},
+	"playfield": "playfield14K2S.json",
+	"cs": [0.5, 0, 0, 0, "h"],
+	"key": {
+		"x": [-0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1, 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6],
+		"y": [0.9375, 0.9375, 0.9375, 0.9375, 0.9375, 0.9375, 0.9375, 0.9375, 0.9375, 0.9375, 0.9375, 0.9375, 0.9375, 0.9375],
+		"w": [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1],
+		"h": [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1],
+		"lnw": [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1],
+		"lnh": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+		"fx": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+		"fy": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+		"ox": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+		"oy": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+		"lnox": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+		"lnoy": [-0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5],
+		"layer": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
+		"image": {
+			"ShortNote": [
+				"note/white.png",
+				"note/green.png",
+				"note/white.png",
+				"note/green.png",
+				"note/white.png",
+				"note/green.png",
+				"note/white.png",
+				"note/white.png",
+				"note/green.png",
+				"note/white.png",
+				"note/green.png",
+				"note/white.png",
+				"note/green.png",
+				"note/white.png"
+			],
+			"LongNoteHead": [
+				"headtail/white.png",
+				"headtail/green.png",
+				"headtail/white.png",
+				"headtail/green.png",
+				"headtail/white.png",
+				"headtail/green.png",
+				"headtail/white.png",
+				"headtail/white.png",
+				"headtail/green.png",
+				"headtail/white.png",
+				"headtail/green.png",
+				"headtail/white.png",
+				"headtail/green.png",
+				"headtail/white.png"
+			],
+			"LongNoteTail": [
+				"headtail/white.png",
+				"headtail/green.png",
+				"headtail/white.png",
+				"headtail/green.png",
+				"headtail/white.png",
+				"headtail/green.png",
+				"headtail/white.png",
+				"headtail/white.png",
+				"headtail/green.png",
+				"headtail/white.png",
+				"headtail/green.png",
+				"headtail/white.png",
+				"headtail/green.png",
+				"headtail/white.png"
+			],
+			"LongNoteBody": [
+				"body/white.png",
+				"body/green.png",
+				"body/white.png",
+				"body/green.png",
+				"body/white.png",
+				"body/green.png",
+				"body/white.png",
+				"body/white.png",
+				"body/green.png",
+				"body/white.png",
+				"body/green.png",
+				"body/white.png",
+				"body/green.png",
+				"body/white.png"
+			]
+		}
+	},
+	"scratch": {
+		"x": [-0.8, 0.7],
+		"y": [0.9375, 0.9375],
+		"w": [0.1, 0.1],
+		"h": [0.1, 0.1],
+		"lnw": [0.1, 0.1],
+		"lnh": [0, 0],
+		"fx": [0, 0],
+		"fy": [-1, -1],
+		"ox": [0, 0],
+		"oy": [-1, -1],
+		"lnox": [0, 0],
+		"lnoy": [-0.5, -0.5],
+		"layer": [10, 10],
+		"image": {
+			"ShortNote": [
+				"note/orange.png",
+				"note/orange.png"
+			],
+			"LongNoteHead": [
+				"headtail/orange.png",
+				"headtail/orange.png"
+			],
+			"LongNoteTail": [
+				"headtail/orange.png",
+				"headtail/orange.png"
+			],
+			"LongNoteBody": [
+				"body/orange.png",
+				"body/orange.png"
+			]
+		}
+	}
+}

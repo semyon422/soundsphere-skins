@@ -57,6 +57,15 @@
 				"body/white.png",
 				"body/blue.png",
 				"body/white.png"
+			],
+			"SoundNote": [
+				"note/red.png",
+				"note/red.png",
+				"note/red.png",
+				"note/red.png",
+				"note/red.png",
+				"note/red.png",
+				"note/red.png"
 			]
 		}
 	},
@@ -86,6 +95,9 @@
 			],
 			"LongNoteBody": [
 				"body/orange.png"
+			],
+			"SoundNote": [
+				"note/red.png"
 			]
 		}
 	}

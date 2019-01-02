@@ -5,45 +5,193 @@
 	},
 	"playfield": "playfield4k.json",
 	"cs": [0.5, 0, 0, 0, "h"],
-	"key": {
-		"x": [-0.266, -0.133, 0, 0.133],
-		"y": [0.958, 0.958, 0.958, 0.958],
-		"w": [0.133, 0.133, 0.133, 0.133],
-		"h": [0.133, 0.133, 0.133, 0.133],
-		"lnw": [0.133, 0.133, 0.133, 0.133],
-		"lnh": [0, 0, 0, 0],
-		"layer": [10, 10, 10, 10],
-		"fx": [0, 0, 0, 0],
-		"fy": [-1, -1, -1, -1],
-		"ox": [0, 0, 0, 0],
-		"oy": [-1, -1, -1, -1],
-		"lnox": [0, 0, 0, 0],
-		"lnoy": [-0.5, -0.5, -0.5, -0.5],
-		"image": {
-			"ShortNote": [
-				"note/left.png",
-				"note/down.png",
-				"note/up.png",
-				"note/right.png"
-			],
-			"LongNoteHead": [
-				"note/left.png",
-				"note/down.png",
-				"note/up.png",
-				"note/right.png"
-			],
-			"LongNoteTail": [
-				"note/tail-up.png",
-				"note/tail-up.png",
-				"note/tail-up.png",
-				"note/tail-up.png"
-			],
-			"LongNoteBody": [
-				"note/body.png",
-				"note/body.png",
-				"note/body.png",
-				"note/body.png"
-			]
+	"notes": {
+		"measure1:LineNote": {
+			"Head": {
+				"x": -0.333,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 8,
+				"w": 0.666,
+				"h": 0,
+			}
+		},
+		"key1:ShortNote": {
+			"Head": {
+				"x": -0.2666,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1333,
+				"h": 0.1333,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/left.png"
+			}
+		},
+		"key1:LongNote": {
+			"Head": {
+				"x": -0.2666,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1333,
+				"h": 0.1333,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/left.png"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1333,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "note/body.png"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1333,
+				"h": 0.1333,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/tail-up.png"
+			}
+		},
+		"key2:ShortNote": {
+			"Head": {
+				"x": -0.1333,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1333,
+				"h": 0.1333,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/down.png"
+			}
+		},
+		"key2:LongNote": {
+			"Head": {
+				"x": -0.1333,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1333,
+				"h": 0.1333,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/down.png"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1333,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "note/body.png"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1333,
+				"h": 0.1333,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/tail-up.png"
+			}
+		},
+		"key3:ShortNote": {
+			"Head": {
+				"x": 0,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1333,
+				"h": 0.1333,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/up.png"
+			}
+		},
+		"key3:LongNote": {
+			"Head": {
+				"x": 0,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1333,
+				"h": 0.1333,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/up.png"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1333,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "note/body.png"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1333,
+				"h": 0.1333,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/tail-up.png"
+			}
+		},
+		"key4:ShortNote": {
+			"Head": {
+				"x": 0.1333,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1333,
+				"h": 0.1333,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/right.png"
+			}
+		},
+		"key4:LongNote": {
+			"Head": {
+				"x": 0.1333,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1333,
+				"h": 0.1333,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/right.png"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1333,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "note/body.png"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1333,
+				"h": 0.1333,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/tail-up.png"
+			}
 		}
 	}
 }

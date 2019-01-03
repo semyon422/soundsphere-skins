@@ -32,6 +32,20 @@
 				"image": "note/white.png"
 			}
 		},
+		"key1:SoundNote": {
+			"Head": {
+				"x": -0.7,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/red.png"
+			}
+		},
 		"key1:LongNote": {
 			"Head": {
 				"x": -0.7,
@@ -74,6 +88,20 @@
 				"ox": 0,
 				"oy": -1,
 				"image": "note/green.png"
+			}
+		},
+		"key2:SoundNote": {
+			"Head": {
+				"x": -0.6,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/red.png"
 			}
 		},
 		"key2:LongNote": {
@@ -120,6 +148,20 @@
 				"image": "note/white.png"
 			}
 		},
+		"key3:SoundNote": {
+			"Head": {
+				"x": -0.5,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/red.png"
+			}
+		},
 		"key3:LongNote": {
 			"Head": {
 				"x": -0.5,
@@ -162,6 +204,20 @@
 				"ox": 0,
 				"oy": -1,
 				"image": "note/green.png"
+			}
+		},
+		"key4:SoundNote": {
+			"Head": {
+				"x": -0.4,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/red.png"
 			}
 		},
 		"key4:LongNote": {
@@ -208,6 +264,20 @@
 				"image": "note/white.png"
 			}
 		},
+		"key5:SoundNote": {
+			"Head": {
+				"x": -0.3,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/red.png"
+			}
+		},
 		"key5:LongNote": {
 			"Head": {
 				"x": -0.3,
@@ -250,6 +320,20 @@
 				"ox": 0,
 				"oy": -1,
 				"image": "note/green.png"
+			}
+		},
+		"key6:SoundNote": {
+			"Head": {
+				"x": -0.2,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/red.png"
 			}
 		},
 		"key6:LongNote": {
@@ -296,6 +380,20 @@
 				"image": "note/white.png"
 			}
 		},
+		"key7:SoundNote": {
+			"Head": {
+				"x": -0.1,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/red.png"
+			}
+		},
 		"key7:LongNote": {
 			"Head": {
 				"x": -0.1,
@@ -338,6 +436,20 @@
 				"ox": 0,
 				"oy": -1,
 				"image": "note/orange.png"
+			}
+		},
+		"scratch1:SoundNote": {
+			"Head": {
+				"x": -0.8,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/red.png"
 			}
 		},
 		"scratch1:LongNote": {

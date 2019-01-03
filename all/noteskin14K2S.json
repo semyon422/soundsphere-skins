@@ -6,118 +6,721 @@
 	},
 	"playfield": "playfield14K2S.json",
 	"cs": [0.5, 0, 0, 0, "h"],
-	"key": {
-		"x": [-0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1, 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6],
-		"y": [0.9375, 0.9375, 0.9375, 0.9375, 0.9375, 0.9375, 0.9375, 0.9375, 0.9375, 0.9375, 0.9375, 0.9375, 0.9375, 0.9375],
-		"w": [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1],
-		"h": [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1],
-		"lnw": [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1],
-		"lnh": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-		"fx": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-		"fy": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
-		"ox": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-		"oy": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
-		"lnox": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-		"lnoy": [-0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5],
-		"layer": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
-		"image": {
-			"ShortNote": [
-				"note/white.png",
-				"note/green.png",
-				"note/white.png",
-				"note/green.png",
-				"note/white.png",
-				"note/green.png",
-				"note/white.png",
-				"note/white.png",
-				"note/green.png",
-				"note/white.png",
-				"note/green.png",
-				"note/white.png",
-				"note/green.png",
-				"note/white.png"
-			],
-			"LongNoteHead": [
-				"headtail/white.png",
-				"headtail/green.png",
-				"headtail/white.png",
-				"headtail/green.png",
-				"headtail/white.png",
-				"headtail/green.png",
-				"headtail/white.png",
-				"headtail/white.png",
-				"headtail/green.png",
-				"headtail/white.png",
-				"headtail/green.png",
-				"headtail/white.png",
-				"headtail/green.png",
-				"headtail/white.png"
-			],
-			"LongNoteTail": [
-				"headtail/white.png",
-				"headtail/green.png",
-				"headtail/white.png",
-				"headtail/green.png",
-				"headtail/white.png",
-				"headtail/green.png",
-				"headtail/white.png",
-				"headtail/white.png",
-				"headtail/green.png",
-				"headtail/white.png",
-				"headtail/green.png",
-				"headtail/white.png",
-				"headtail/green.png",
-				"headtail/white.png"
-			],
-			"LongNoteBody": [
-				"body/white.png",
-				"body/green.png",
-				"body/white.png",
-				"body/green.png",
-				"body/white.png",
-				"body/green.png",
-				"body/white.png",
-				"body/white.png",
-				"body/green.png",
-				"body/white.png",
-				"body/green.png",
-				"body/white.png",
-				"body/green.png",
-				"body/white.png"
-			]
-		}
-	},
-	"scratch": {
-		"x": [-0.8, 0.7],
-		"y": [0.9375, 0.9375],
-		"w": [0.1, 0.1],
-		"h": [0.1, 0.1],
-		"lnw": [0.1, 0.1],
-		"lnh": [0, 0],
-		"fx": [0, 0],
-		"fy": [-1, -1],
-		"ox": [0, 0],
-		"oy": [-1, -1],
-		"lnox": [0, 0],
-		"lnoy": [-0.5, -0.5],
-		"layer": [10, 10],
-		"image": {
-			"ShortNote": [
-				"note/orange.png",
-				"note/orange.png"
-			],
-			"LongNoteHead": [
-				"headtail/orange.png",
-				"headtail/orange.png"
-			],
-			"LongNoteTail": [
-				"headtail/orange.png",
-				"headtail/orange.png"
-			],
-			"LongNoteBody": [
-				"body/orange.png",
-				"body/orange.png"
-			]
+	"notes": {
+		"measure1:LineNote": {
+			"Head": {
+				"x": -0.85,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 8,
+				"w": 1.7,
+				"h": 0,
+			}
+		},
+		"key1:ShortNote": {
+			"Head": {
+				"x": -0.7,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/white.png"
+			}
+		},
+		"key1:LongNote": {
+			"Head": {
+				"x": -0.7,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/white.png"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body/white.png"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail/white.png"
+			}
+		},
+		"key2:ShortNote": {
+			"Head": {
+				"x": -0.6,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/green.png"
+			}
+		},
+		"key2:LongNote": {
+			"Head": {
+				"x": -0.6,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/green.png"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body/green.png"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail/green.png"
+			}
+		},
+		"key3:ShortNote": {
+			"Head": {
+				"x": -0.5,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/white.png"
+			}
+		},
+		"key3:LongNote": {
+			"Head": {
+				"x": -0.5,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/white.png"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body/white.png"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail/white.png"
+			}
+		},
+		"key4:ShortNote": {
+			"Head": {
+				"x": -0.4,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/green.png"
+			}
+		},
+		"key4:LongNote": {
+			"Head": {
+				"x": -0.4,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/green.png"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body/green.png"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail/green.png"
+			}
+		},
+		"key5:ShortNote": {
+			"Head": {
+				"x": -0.3,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/white.png"
+			}
+		},
+		"key5:LongNote": {
+			"Head": {
+				"x": -0.3,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/white.png"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body/white.png"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail/white.png"
+			}
+		},
+		"key6:ShortNote": {
+			"Head": {
+				"x": -0.2,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/white.png"
+			}
+		},
+		"key6:LongNote": {
+			"Head": {
+				"x": -0.2,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/white.png"
+			},
+			"Body": {
+				"layer": 9,
+				"w": -0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body/white.png"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail/white.png"
+			}
+		},
+		"key7:ShortNote": {
+			"Head": {
+				"x": -0.1,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/green.png"
+			}
+		},
+		"key7:LongNote": {
+			"Head": {
+				"x": -0.1,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/green.png"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body/green.png"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail/green.png"
+			}
+		},
+		"key8:ShortNote": {
+			"Head": {
+				"x": 0,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/white.png"
+			}
+		},
+		"key8:LongNote": {
+			"Head": {
+				"x": 0,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/white.png"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body/white.png"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail/white.png"
+			}
+		},
+		"key9:ShortNote": {
+			"Head": {
+				"x": 0.1,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/green.png"
+			}
+		},
+		"key9:LongNote": {
+			"Head": {
+				"x": 0.1,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/green.png"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body/green.png"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail/green.png"
+			}
+		},
+		"key10:ShortNote": {
+			"Head": {
+				"x": 0.2,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/white.png"
+			}
+		},
+		"key10:LongNote": {
+			"Head": {
+				"x": 0.2,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/white.png"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body/white.png"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail/white.png"
+			}
+		},
+		"key11:ShortNote": {
+			"Head": {
+				"x": 0.3,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/white.png"
+			}
+		},
+		"key11:LongNote": {
+			"Head": {
+				"x": 0.3,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/white.png"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body/white.png"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail/white.png"
+			}
+		},
+		"key12:ShortNote": {
+			"Head": {
+				"x": 0.4,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/white.png"
+			}
+		},
+		"key12:LongNote": {
+			"Head": {
+				"x": 0.4,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/white.png"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body/white.png"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail/white.png"
+			}
+		},
+		"key13:ShortNote": {
+			"Head": {
+				"x": 0.5,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/white.png"
+			}
+		},
+		"key13:LongNote": {
+			"Head": {
+				"x": 0.5,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/white.png"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body/white.png"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail/white.png"
+			}
+		},
+		"key14:ShortNote": {
+			"Head": {
+				"x": 0.6,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/white.png"
+			}
+		},
+		"key14:LongNote": {
+			"Head": {
+				"x": 0.6,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/white.png"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body/white.png"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail/white.png"
+			}
+		},
+		"scratch1:ShortNote": {
+			"Head": {
+				"x": -0.8,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/orange.png"
+			}
+		},
+		"scratch1:LongNote": {
+			"Head": {
+				"x": -0.8,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/orange.png"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body/orange.png"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail/orange.png"
+			}
+		},
+		"scratch2:ShortNote": {
+			"Head": {
+				"x": 0.7,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/orange.png"
+			}
+		},
+		"scratch2:LongNote": {
+			"Head": {
+				"x": 0.7,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note/orange.png"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body/orange.png"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail/orange.png"
+			}
 		}
 	}
 }

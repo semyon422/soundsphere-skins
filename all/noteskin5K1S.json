@@ -43,7 +43,7 @@
 				"h": 0.1,
 				"ox": 0,
 				"oy": -1,
-				"image": "note/white.png"
+				"image": "headtail/white.png"
 			},
 			"Body": {
 				"layer": 9,
@@ -87,7 +87,7 @@
 				"h": 0.1,
 				"ox": 0,
 				"oy": -1,
-				"image": "note/green.png"
+				"image": "headtail/green.png"
 			},
 			"Body": {
 				"layer": 9,
@@ -131,7 +131,7 @@
 				"h": 0.1,
 				"ox": 0,
 				"oy": -1,
-				"image": "note/white.png"
+				"image": "headtail/white.png"
 			},
 			"Body": {
 				"layer": 9,
@@ -175,7 +175,7 @@
 				"h": 0.1,
 				"ox": 0,
 				"oy": -1,
-				"image": "note/green.png"
+				"image": "headtail/green.png"
 			},
 			"Body": {
 				"layer": 9,
@@ -219,7 +219,7 @@
 				"h": 0.1,
 				"ox": 0,
 				"oy": -1,
-				"image": "note/white.png"
+				"image": "headtail/white.png"
 			},
 			"Body": {
 				"layer": 9,
@@ -263,7 +263,7 @@
 				"h": 0.1,
 				"ox": 0,
 				"oy": -1,
-				"image": "note/orange.png"
+				"image": "headtail/orange.png"
 			},
 			"Body": {
 				"layer": 9,

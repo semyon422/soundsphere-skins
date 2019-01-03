@@ -249,7 +249,7 @@
 				"h": 0.1,
 				"ox": 0,
 				"oy": -1,
-				"image": "note/white.png"
+				"image": "note/green.png"
 			}
 		},
 		"key6:LongNote": {
@@ -263,7 +263,7 @@
 				"h": 0.1,
 				"ox": 0,
 				"oy": -1,
-				"image": "note/white.png"
+				"image": "note/green.png"
 			},
 			"Body": {
 				"layer": 9,
@@ -271,7 +271,7 @@
 				"h": 0,
 				"ox": 0,
 				"oy": -0.5,
-				"image": "body/white.png"
+				"image": "body/green.png"
 			},
 			"Tail": {
 				"layer": 10,
@@ -279,7 +279,7 @@
 				"h": 0.1,
 				"ox": 0,
 				"oy": -1,
-				"image": "headtail/white.png"
+				"image": "headtail/green.png"
 			}
 		},
 		"key7:ShortNote": {
@@ -293,7 +293,7 @@
 				"h": 0.1,
 				"ox": 0,
 				"oy": -1,
-				"image": "note/green.png"
+				"image": "note/white.png"
 			}
 		},
 		"key7:LongNote": {
@@ -307,7 +307,7 @@
 				"h": 0.1,
 				"ox": 0,
 				"oy": -1,
-				"image": "note/green.png"
+				"image": "note/white.png"
 			},
 			"Body": {
 				"layer": 9,
@@ -315,7 +315,7 @@
 				"h": 0,
 				"ox": 0,
 				"oy": -0.5,
-				"image": "body/green.png"
+				"image": "body/white.png"
 			},
 			"Tail": {
 				"layer": 10,
@@ -323,7 +323,7 @@
 				"h": 0.1,
 				"ox": 0,
 				"oy": -1,
-				"image": "headtail/green.png"
+				"image": "headtail/white.png"
 			}
 		},
 		"scratch1:ShortNote": {

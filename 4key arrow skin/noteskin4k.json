@@ -5,6 +5,14 @@
 	},
 	"playfield": "playfield4k.json",
 	"cs": [0.5, 0, 0, 0, "h"],
+	"images": [
+		{"name": "left", "path": "note/left.png", "layer": 3},
+		{"name": "down", "path": "note/down.png", "layer": 3},
+		{"name": "up", "path": "note/up.png", "layer": 3},
+		{"name": "right", "path": "note/right.png", "layer": 3},
+		{"name": "tail", "path": "note/tail-up.png", "layer": 2},
+		{"name": "body", "path": "note/body.png", "layer": 1}
+	],
 	"notes": {
 		"measure1:LineNote": {
 			"Head": {
@@ -28,7 +36,7 @@
 				"h": 0.1333,
 				"ox": 0,
 				"oy": -1,
-				"image": "note/left.png"
+				"image": "left"
 			}
 		},
 		"key1:LongNote": {
@@ -42,7 +50,7 @@
 				"h": 0.1333,
 				"ox": 0,
 				"oy": -1,
-				"image": "note/left.png"
+				"image": "left"
 			},
 			"Body": {
 				"layer": 9,
@@ -50,7 +58,7 @@
 				"h": 0,
 				"ox": 0,
 				"oy": -0.5,
-				"image": "note/body.png"
+				"image": "body"
 			},
 			"Tail": {
 				"layer": 10,
@@ -58,7 +66,7 @@
 				"h": 0.1333,
 				"ox": 0,
 				"oy": -1,
-				"image": "note/tail-up.png"
+				"image": "tail"
 			}
 		},
 		"key2:ShortNote": {
@@ -72,7 +80,7 @@
 				"h": 0.1333,
 				"ox": 0,
 				"oy": -1,
-				"image": "note/down.png"
+				"image": "down"
 			}
 		},
 		"key2:LongNote": {
@@ -86,7 +94,7 @@
 				"h": 0.1333,
 				"ox": 0,
 				"oy": -1,
-				"image": "note/down.png"
+				"image": "down"
 			},
 			"Body": {
 				"layer": 9,
@@ -94,7 +102,7 @@
 				"h": 0,
 				"ox": 0,
 				"oy": -0.5,
-				"image": "note/body.png"
+				"image": "body"
 			},
 			"Tail": {
 				"layer": 10,
@@ -102,7 +110,7 @@
 				"h": 0.1333,
 				"ox": 0,
 				"oy": -1,
-				"image": "note/tail-up.png"
+				"image": "tail"
 			}
 		},
 		"key3:ShortNote": {
@@ -116,7 +124,7 @@
 				"h": 0.1333,
 				"ox": 0,
 				"oy": -1,
-				"image": "note/up.png"
+				"image": "up"
 			}
 		},
 		"key3:LongNote": {
@@ -130,7 +138,7 @@
 				"h": 0.1333,
 				"ox": 0,
 				"oy": -1,
-				"image": "note/up.png"
+				"image": "up"
 			},
 			"Body": {
 				"layer": 9,
@@ -138,7 +146,7 @@
 				"h": 0,
 				"ox": 0,
 				"oy": -0.5,
-				"image": "note/body.png"
+				"image": "body"
 			},
 			"Tail": {
 				"layer": 10,
@@ -146,7 +154,7 @@
 				"h": 0.1333,
 				"ox": 0,
 				"oy": -1,
-				"image": "note/tail-up.png"
+				"image": "tail"
 			}
 		},
 		"key4:ShortNote": {
@@ -160,7 +168,7 @@
 				"h": 0.1333,
 				"ox": 0,
 				"oy": -1,
-				"image": "note/right.png"
+				"image": "right"
 			}
 		},
 		"key4:LongNote": {
@@ -174,7 +182,7 @@
 				"h": 0.1333,
 				"ox": 0,
 				"oy": -1,
-				"image": "note/right.png"
+				"image": "right"
 			},
 			"Body": {
 				"layer": 9,
@@ -182,7 +190,7 @@
 				"h": 0,
 				"ox": 0,
 				"oy": -0.5,
-				"image": "note/body.png"
+				"image": "body"
 			},
 			"Tail": {
 				"layer": 10,
@@ -190,7 +198,7 @@
 				"h": 0.1333,
 				"ox": 0,
 				"oy": -1,
-				"image": "note/tail-up.png"
+				"image": "tail"
 			}
 		}
 	}

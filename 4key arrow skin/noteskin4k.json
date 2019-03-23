@@ -10,7 +10,8 @@
 		{"name": "down", "path": "note/down.png", "layer": 3},
 		{"name": "up", "path": "note/up.png", "layer": 3},
 		{"name": "right", "path": "note/right.png", "layer": 3},
-		{"name": "tail", "path": "note/tail-up.png", "layer": 2},
+		{"name": "tail-up", "path": "note/tail-up.png", "layer": 2},
+		{"name": "tail-down", "path": "note/tail-down.png", "layer": 2},
 		{"name": "body", "path": "note/body.png", "layer": 1}
 	],
 	"notes": {
@@ -37,6 +38,20 @@
 				"ox": 0,
 				"oy": -1,
 				"image": "left"
+			}
+		},
+		"key1:SoundNote": {
+			"Head": {
+				"x": -0.2666,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1333,
+				"h": 0.1333,
+				"ox": 0,
+				"oy": -1,
+				"image": "tail-down"
 			}
 		},
 		"key1:LongNote": {
@@ -66,7 +81,7 @@
 				"h": 0.1333,
 				"ox": 0,
 				"oy": -1,
-				"image": "tail"
+				"image": "tail-up"
 			}
 		},
 		"key2:ShortNote": {
@@ -81,6 +96,20 @@
 				"ox": 0,
 				"oy": -1,
 				"image": "down"
+			}
+		},
+		"key2:SoundNote": {
+			"Head": {
+				"x": -0.1333,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1333,
+				"h": 0.1333,
+				"ox": 0,
+				"oy": -1,
+				"image": "tail-down"
 			}
 		},
 		"key2:LongNote": {
@@ -110,7 +139,7 @@
 				"h": 0.1333,
 				"ox": 0,
 				"oy": -1,
-				"image": "tail"
+				"image": "tail-up"
 			}
 		},
 		"key3:ShortNote": {
@@ -125,6 +154,20 @@
 				"ox": 0,
 				"oy": -1,
 				"image": "up"
+			}
+		},
+		"key3:SoundNote": {
+			"Head": {
+				"x": 0,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1333,
+				"h": 0.1333,
+				"ox": 0,
+				"oy": -1,
+				"image": "tail-down"
 			}
 		},
 		"key3:LongNote": {
@@ -154,7 +197,7 @@
 				"h": 0.1333,
 				"ox": 0,
 				"oy": -1,
-				"image": "tail"
+				"image": "tail-up"
 			}
 		},
 		"key4:ShortNote": {
@@ -169,6 +212,20 @@
 				"ox": 0,
 				"oy": -1,
 				"image": "right"
+			}
+		},
+		"key4:SoundNote": {
+			"Head": {
+				"x": 0.1333,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1333,
+				"h": 0.1333,
+				"ox": 0,
+				"oy": -1,
+				"image": "tail-down"
 			}
 		},
 		"key4:LongNote": {
@@ -198,7 +255,7 @@
 				"h": 0.1333,
 				"ox": 0,
 				"oy": -1,
-				"image": "tail"
+				"image": "tail-up"
 			}
 		}
 	}

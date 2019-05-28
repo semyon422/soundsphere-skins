@@ -4,7 +4,10 @@
 		"key": 4
 	},
 	"playfield": "playfield4k.json",
-	"cs": [0.5, 0, 0, 0, "h"],
+	"cses": [
+		[0.5, 0, 0, 0, "h"],
+		[1, 0, 0, 0, "h"],
+	],
 	"images": [
 		{"name": "left", "path": "note/left.png", "layer": 3},
 		{"name": "down", "path": "note/down.png", "layer": 3},
@@ -17,17 +20,19 @@
 	"notes": {
 		"measure1:LineNote": {
 			"Head": {
+				"cs": 1,
 				"x": -0.333,
 				"y": 0.9375,
 				"fx": 0,
 				"fy": -1,
 				"layer": 8,
 				"w": 0.666,
-				"h": 0,
+				"h": 0
 			}
 		},
 		"key1:ShortNote": {
 			"Head": {
+				"cs": 1,
 				"x": -0.2666,
 				"y": 0.9375,
 				"fx": 0,
@@ -42,6 +47,7 @@
 		},
 		"key1:SoundNote": {
 			"Head": {
+				"cs": 1,
 				"x": -0.2666,
 				"y": 0.9375,
 				"fx": 0,
@@ -56,6 +62,7 @@
 		},
 		"key1:LongNote": {
 			"Head": {
+				"cs": 1,
 				"x": -0.2666,
 				"y": 0.9375,
 				"fx": 0,
@@ -86,6 +93,7 @@
 		},
 		"key2:ShortNote": {
 			"Head": {
+				"cs": 1,
 				"x": -0.1333,
 				"y": 0.9375,
 				"fx": 0,
@@ -100,6 +108,7 @@
 		},
 		"key2:SoundNote": {
 			"Head": {
+				"cs": 1,
 				"x": -0.1333,
 				"y": 0.9375,
 				"fx": 0,
@@ -114,6 +123,7 @@
 		},
 		"key2:LongNote": {
 			"Head": {
+				"cs": 1,
 				"x": -0.1333,
 				"y": 0.9375,
 				"fx": 0,
@@ -144,6 +154,7 @@
 		},
 		"key3:ShortNote": {
 			"Head": {
+				"cs": 1,
 				"x": 0,
 				"y": 0.9375,
 				"fx": 0,
@@ -158,6 +169,7 @@
 		},
 		"key3:SoundNote": {
 			"Head": {
+				"cs": 1,
 				"x": 0,
 				"y": 0.9375,
 				"fx": 0,
@@ -172,6 +184,7 @@
 		},
 		"key3:LongNote": {
 			"Head": {
+				"cs": 1,
 				"x": 0,
 				"y": 0.9375,
 				"fx": 0,
@@ -202,6 +215,7 @@
 		},
 		"key4:ShortNote": {
 			"Head": {
+				"cs": 1,
 				"x": 0.1333,
 				"y": 0.9375,
 				"fx": 0,
@@ -216,6 +230,7 @@
 		},
 		"key4:SoundNote": {
 			"Head": {
+				"cs": 1,
 				"x": 0.1333,
 				"y": 0.9375,
 				"fx": 0,
@@ -230,6 +245,7 @@
 		},
 		"key4:LongNote": {
 			"Head": {
+				"cs": 1,
 				"x": 0.1333,
 				"y": 0.9375,
 				"fx": 0,

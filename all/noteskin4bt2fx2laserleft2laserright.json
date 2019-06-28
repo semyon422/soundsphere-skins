@@ -1,0 +1,650 @@
+{
+	"name": "semyon422's 4bt2fx2laserleft2laserright skin",
+	"inputMode": {
+		"bt": 4,
+		"fx": 2,
+		"laserleft": 2,
+		"laserright": 2
+	},
+	"playfield": "playfield4bt2fx2laserleft2laserright.json",
+	"cses": [
+		[0.5, 0, 0, 0, "h"],
+		[1, 0, 0, 0, "h"],
+	],
+	"images": [
+		{"name": "note-white", "path": "note/white.png", "layer": 4},
+		{"name": "note-green", "path": "note/green.png", "layer": 4},
+		{"name": "note-orange", "path": "note/orange.png", "layer": 4},
+		{"name": "headtail-white", "path": "headtail/white.png", "layer": 3},
+		{"name": "headtail-green", "path": "headtail/green.png", "layer": 3},
+		{"name": "headtail-orange", "path": "headtail/orange.png", "layer": 3},
+		{"name": "body-white", "path": "body/white.png", "layer": 2},
+		{"name": "body-green", "path": "body/green.png", "layer": 2},
+		{"name": "body-orange", "path": "body/orange.png", "layer": 2},
+		{"name": "note-red", "path": "note/red.png", "layer": 1}
+	],
+	"notes": {
+		"measure1:LineNote": {
+			"Head": {
+				"cs": 1,
+				"x": -0.65,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 8,
+				"w": 1.3,
+				"h": 0
+			}
+		},
+		"laserleft1:ShortNote": {
+			"Head": {
+				"cs": 1,
+				"x": -0.5,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note-white"
+			}
+		},
+		"laserleft1:SoundNote": {
+			"Head": {
+				"cs": 1,
+				"x": -0.5,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note-red"
+			}
+		},
+		"laserleft1:LongNote": {
+			"Head": {
+				"cs": 1,
+				"x": -0.5,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail-white"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body-white"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail-white"
+			}
+		},
+		"laserright1:ShortNote": {
+			"Head": {
+				"cs": 1,
+				"x": -0.4,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note-green"
+			}
+		},
+		"laserright1:SoundNote": {
+			"Head": {
+				"cs": 1,
+				"x": -0.4,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note-red"
+			}
+		},
+		"laserright1:LongNote": {
+			"Head": {
+				"cs": 1,
+				"x": -0.4,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail-green"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body-green"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail-green"
+			}
+		},
+		"bt1:ShortNote": {
+			"Head": {
+				"cs": 1,
+				"x": -0.3,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note-white"
+			}
+		},
+		"bt1:SoundNote": {
+			"Head": {
+				"cs": 1,
+				"x": -0.3,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note-red"
+			}
+		},
+		"bt1:LongNote": {
+			"Head": {
+				"cs": 1,
+				"x": -0.3,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail-white"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body-white"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail-white"
+			}
+		},
+		"bt2:ShortNote": {
+			"Head": {
+				"cs": 1,
+				"x": -0.2,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note-green"
+			}
+		},
+		"bt2:SoundNote": {
+			"Head": {
+				"cs": 1,
+				"x": -0.2,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note-red"
+			}
+		},
+		"bt2:LongNote": {
+			"Head": {
+				"cs": 1,
+				"x": -0.2,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail-green"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body-green"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail-green"
+			}
+		},
+		"fx1:ShortNote": {
+			"Head": {
+				"cs": 1,
+				"x": -0.1,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note-white"
+			}
+		},
+		"fx1:SoundNote": {
+			"Head": {
+				"cs": 1,
+				"x": -0.1,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note-red"
+			}
+		},
+		"fx1:LongNote": {
+			"Head": {
+				"cs": 1,
+				"x": -0.1,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail-white"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body-white"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail-white"
+			}
+		},
+		"fx2:ShortNote": {
+			"Head": {
+				"cs": 1,
+				"x": 0,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note-white"
+			}
+		},
+		"fx2:SoundNote": {
+			"Head": {
+				"cs": 1,
+				"x": 0,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note-red"
+			}
+		},
+		"fx2:LongNote": {
+			"Head": {
+				"cs": 1,
+				"x": 0,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail-white"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body-white"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail-white"
+			}
+		},
+		"bt3:ShortNote": {
+			"Head": {
+				"cs": 1,
+				"x": 0.1,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note-green"
+			}
+		},
+		"bt3:SoundNote": {
+			"Head": {
+				"cs": 1,
+				"x": 0.1,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note-red"
+			}
+		},
+		"bt3:LongNote": {
+			"Head": {
+				"cs": 1,
+				"x": 0.1,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail-green"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body-green"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail-green"
+			}
+		},
+		"bt4:ShortNote": {
+			"Head": {
+				"cs": 1,
+				"x": 0.2,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note-white"
+			}
+		},
+		"bt4:SoundNote": {
+			"Head": {
+				"cs": 1,
+				"x": 0.2,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note-red"
+			}
+		},
+		"bt4:LongNote": {
+			"Head": {
+				"cs": 1,
+				"x": 0.2,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail-white"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body-white"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail-white"
+			}
+		},
+		"laserleft2:ShortNote": {
+			"Head": {
+				"cs": 1,
+				"x": 0.3,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note-green"
+			}
+		},
+		"laserleft2:SoundNote": {
+			"Head": {
+				"cs": 1,
+				"x": 0.3,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note-red"
+			}
+		},
+		"laserleft2:LongNote": {
+			"Head": {
+				"cs": 1,
+				"x": 0.3,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail-green"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body-green"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail-green"
+			}
+		},
+		"laserright2:ShortNote": {
+			"Head": {
+				"cs": 1,
+				"x": 0.4,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note-white"
+			}
+		},
+		"laserright2:SoundNote": {
+			"Head": {
+				"cs": 1,
+				"x": 0.4,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "note-red"
+			}
+		},
+		"laserright2:LongNote": {
+			"Head": {
+				"cs": 1,
+				"x": 0.4,
+				"y": 0.9375,
+				"fx": 0,
+				"fy": -1,
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail-white"
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.1,
+				"h": 0,
+				"ox": 0,
+				"oy": -0.5,
+				"image": "body-white"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0.1,
+				"h": 0.1,
+				"ox": 0,
+				"oy": -1,
+				"image": "headtail-white"
+			}
+		},
+	}
+}

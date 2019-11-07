@@ -15,19 +15,39 @@
 		{"name": "right", "path": "note/right.png", "layer": 3},
 		{"name": "tail-up", "path": "note/tail-up.png", "layer": 2},
 		{"name": "tail-down", "path": "note/tail-down.png", "layer": 2},
-		{"name": "body", "path": "note/body.png", "layer": 1}
+		{"name": "body", "path": "note/body.png", "layer": 1},
+		{"name": "pixel", "path": "pixel.png", "layer": 0}
 	],
 	"notes": {
-		"measure1:LineNote": {
+		"measure1:LongNote": {
 			"Head": {
 				"cs": 1,
 				"x": -0.333,
 				"y": 0.9375,
 				"fx": 0,
 				"fy": -1,
+				"ox": 0,
+				"oy": 0,
+				"image": "pixel",
 				"layer": 8,
-				"w": 0.666,
+				"w": 0,
 				"h": 0
+			},
+			"Body": {
+				"layer": 9,
+				"w": 0.666,
+				"h": 0.005,
+				"ox": 0,
+				"oy": 0,
+				"image": "pixel"
+			},
+			"Tail": {
+				"layer": 10,
+				"w": 0,
+				"h": 0,
+				"ox": 0,
+				"oy": 0,
+				"image": "pixel"
 			}
 		},
 		"key1:ShortNote": {

@@ -10,11 +10,66 @@
 		{"name": "down", "path": "down.png", "layer": 3},
 		{"name": "up", "path": "up.png", "layer": 3},
 		{"name": "right", "path": "right.png", "layer": 3},
+		{"name": "line", "path": "line.png", "layer": 0},
+		{"name": "void", "path": "void.png", "layer": 0},
 	],
 	"functions": [
 		{"name": "scale", "chunk0": "return function(dt) return 0.375 ^ (2*dt + 1) end"}
 	],
 	"notes": {
+		"measure1:LongNote": {
+			"Head": {
+				"cs": 1,
+				"gc": {
+					"x": [0],
+					"y": [0],
+					"w": "scale",
+					"h": "scale",
+					"ox": [-0.5],
+					"oy": [-0.5]
+				},
+				"sb": {
+					"w": [2, 0.375],
+					"h": [2, 0.375]
+				},
+				"layer": 10,
+				"image": "line"
+			},
+			"Body": {
+				"cs": 1,
+				"gc": {
+					"x": [0],
+					"y": [0],
+					"w": "scale",
+					"h": "scale",
+					"ox": [-0.5],
+					"oy": [-0.5]
+				},
+				"sb": {
+					"w": [2, 0.375],
+					"h": [2, 0.375]
+				},
+				"layer": 10,
+				"image": "void"
+			},
+			"Tail": {
+				"cs": 1,
+				"gc": {
+					"x": [0],
+					"y": [0],
+					"w": "scale",
+					"h": "scale",
+					"ox": [-0.5],
+					"oy": [-0.5]
+				},
+				"sb": {
+					"w": [2, 0.375],
+					"h": [2, 0.375]
+				},
+				"layer": 10,
+				"image": "void"
+			}
+		},
 		"key1:ShortNote": {
 			"Head": {
 				"cs": 1,

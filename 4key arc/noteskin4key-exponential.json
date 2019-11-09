@@ -14,7 +14,7 @@
 		{"name": "void", "path": "void.png", "layer": 0},
 	],
 	"functions": [
-		{"name": "scale", "chunk0": "return function(dt) return 0.375 ^ (2*dt + 1) end"}
+		{"name": "scale", "chunk0": "return function(dt) if dt <= -10 or dt >= 10 then return 0.375 - dt end return 0.375 ^ (2 * dt + 1) end"}
 	],
 	"notes": {
 		"measure1:LongNote": {
@@ -29,8 +29,8 @@
 					"oy": [-0.5]
 				},
 				"sb": {
-					"w": [2, 0.375],
-					"h": [2, 0.375]
+					"w": [3, 0.375],
+					"h": [3, 0.375]
 				},
 				"layer": 10,
 				"image": "line"
@@ -46,8 +46,8 @@
 					"oy": [-0.5]
 				},
 				"sb": {
-					"w": [2, 0.375],
-					"h": [2, 0.375]
+					"w": [3, 0.375],
+					"h": [3, 0.375]
 				},
 				"layer": 10,
 				"image": "void"
@@ -63,8 +63,8 @@
 					"oy": [-0.5]
 				},
 				"sb": {
-					"w": [2, 0.375],
-					"h": [2, 0.375]
+					"w": [3, 0.375],
+					"h": [3, 0.375]
 				},
 				"layer": 10,
 				"image": "void"

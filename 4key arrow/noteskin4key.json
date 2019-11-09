@@ -1,9 +1,6 @@
 {
-	"name": "semyon422's 4K skin",
-	"inputMode": {
-		"key": 4
-	},
-	"playfield": "playfield4k.json",
+	"name": "soundsphere 4key arrow noteskin",
+	"playfield": "playfield4key.json",
 	"cses": [
 		[0.5, 0, 0, 0, "h"],
 		[1, 0, 0, 0, "h"],

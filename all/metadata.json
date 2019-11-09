@@ -2,37 +2,43 @@
 	{
 		"name": "5K1S circle",
 		"inputMode": "5key1scratch",
-		"type": "json:full",
+		"type": "json:full-v1",
 		"path": "noteskin5K1S.json"
+	},
+	{
+		"name": "5K1S circle new",
+		"inputMode": "5key1scratch",
+		"type": "json:full-v1-new",
+		"path": "noteskin5K1Snew.json"
 	},
 	{
 		"name": "7K1S circle",
 		"inputMode": "7key1scratch",
-		"type": "json:full",
+		"type": "json:full-v1",
 		"path": "noteskin7K1S.json"
 	},
 	{
 		"name": "10K2S circle",
 		"inputMode": "10key2scratch",
-		"type": "json:full",
+		"type": "json:full-v1",
 		"path": "noteskin10K2S.json"
 	},
 	{
 		"name": "14K2S circle",
 		"inputMode": "14key2scratch",
-		"type": "json:full",
+		"type": "json:full-v1",
 		"path": "noteskin14K2S.json"
 	},
 	{
 		"name": "9K circle",
 		"inputMode": "9key",
-		"type": "json:full",
+		"type": "json:full-v1",
 		"path": "noteskin9K.json"
 	},
 	{
 		"name": "10K SDVX circle",
 		"inputMode": "4bt2fx2laserleft2laserright",
-		"type": "json:full",
+		"type": "json:full-v1",
 		"path": "noteskin4bt2fx2laserleft2laserright.json"
 	}
 ]

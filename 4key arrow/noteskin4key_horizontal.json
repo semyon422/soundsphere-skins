@@ -1,0 +1,368 @@
+{
+	"name": "soundsphere 4key arrow noteskin horizontal",
+	"playfield": "playfield4key_horizontal.json",
+	"cses": [
+		[0, 0, 0, 0, "h"],
+		[1, 0, 0, 0, "h"],
+	],
+	"images": [
+		{"name": "left", "path": "note/left.png", "layer": 3},
+		{"name": "down", "path": "note/down.png", "layer": 3},
+		{"name": "up", "path": "note/up.png", "layer": 3},
+		{"name": "right", "path": "note/right.png", "layer": 3},
+		{"name": "tail-right", "path": "note/tail-right.png", "layer": 2},
+		{"name": "tail-left", "path": "note/tail-left.png", "layer": 2},
+		{"name": "body", "path": "note/body-h.png", "layer": 1},
+		{"name": "pixel", "path": "pixel.png", "layer": 0}
+	],
+	"notes": {
+		"measure1:LongNote": {
+			"Head": {
+				"cs": 1,
+				"gc": {
+					"x": [0.5, -1],
+					"y": [0.5],
+					"w": [0],
+					"h": [0],
+					"ox": [0],
+					"oy": [0]
+				},
+				"sb": {},
+				"layer": 8,
+				"image": "pixel"
+			},
+			"Body": {
+				"cs": 1,
+				"gc": {
+					"x": [0.5, -1],
+					"y": [0.366],
+					"w": [0.005],
+					"h": [0.266],
+					"ox": [0],
+					"oy": [0]
+				},
+				"sb": {},
+				"layer": 9,
+				"image": "pixel"
+			},
+			"Tail": {
+				"cs": 1,
+				"gc": {
+					"x": [0.5, -1],
+					"y": [0.5],
+					"w": [0],
+					"h": [0],
+					"ox": [0],
+					"oy": [0]
+				},
+				"sb": {},
+				"layer": 10,
+				"image": "pixel"
+			}
+		},
+		"key1:ShortNote": {
+			"Head": {
+				"cs": 1,
+				"gc": {
+					"x": [0.5, -1],
+					"y": [0.5],
+					"w": [0.1333],
+					"h": [0.1333],
+					"ox": [-0.5],
+					"oy": [-0.5]
+				},
+				"sb": {},
+				"layer": 10,
+				"image": "left"
+			}
+		},
+		"key1:SoundNote": {
+			"Head": {
+				"cs": 1,
+				"gc": {
+					"x": [0.5, -1],
+					"y": [0.5],
+					"w": [0.1333],
+					"h": [0.1333],
+					"ox": [-0.5],
+					"oy": [-0.5]
+				},
+				"sb": {},
+				"layer": 10,
+				"image": "tail-left"
+			}
+		},
+		"key1:LongNote": {
+			"Head": {
+				"cs": 1,
+				"gc": {
+					"x": [0.5, -1],
+					"y": [0.5],
+					"w": [0.1333],
+					"h": [0.1333],
+					"ox": [-0.5],
+					"oy": [-0.5]
+				},
+				"sb": {},
+				"layer": 10,
+				"image": "left"
+			},
+			"Body": {
+				"cs": 1,
+				"gc": {
+					"x": [0.5, -1],
+					"y": [0.5],
+					"w": [0],
+					"h": [0.1333],
+					"ox": [0],
+					"oy": [-0.5]
+				},
+				"sb": {},
+				"layer": 9,
+				"image": "body"
+			},
+			"Tail": {
+				"cs": 1,
+				"gc": {
+					"x": [0.5, -1],
+					"y": [0.5],
+					"w": [0.1333],
+					"h": [0.1333],
+					"ox": [-0.5],
+					"oy": [-0.5]
+				},
+				"sb": {},
+				"layer": 10,
+				"image": "tail-right"
+			}
+		},
+		"key2:ShortNote": {
+			"Head": {
+				"cs": 1,
+				"gc": {
+					"x": [0.5, -1],
+					"y": [0.5],
+					"w": [0.1333],
+					"h": [0.1333],
+					"ox": [-0.5],
+					"oy": [-0.5]
+				},
+				"sb": {},
+				"layer": 10,
+				"image": "down"
+			}
+		},
+		"key2:SoundNote": {
+			"Head": {
+				"cs": 1,
+				"gc": {
+					"x": [0.5, -1],
+					"y": [0.5],
+					"w": [0.1333],
+					"h": [0.1333],
+					"ox": [-0.5],
+					"oy": [-0.5]
+				},
+				"sb": {},
+				"layer": 10,
+				"image": "tail-left"
+			}
+		},
+		"key2:LongNote": {
+			"Head": {
+				"cs": 1,
+				"gc": {
+					"x": [0.5, -1],
+					"y": [0.5],
+					"w": [0.1333],
+					"h": [0.1333],
+					"ox": [-0.5],
+					"oy": [-0.5]
+				},
+				"sb": {},
+				"layer": 10,
+				"image": "down"
+			},
+			"Body": {
+				"cs": 1,
+				"gc": {
+					"x": [0.5, -1],
+					"y": [0.5],
+					"w": [0],
+					"h": [0.1333],
+					"ox": [0],
+					"oy": [-0.5]
+				},
+				"sb": {},
+				"layer": 9,
+				"image": "body"
+			},
+			"Tail": {
+				"cs": 1,
+				"gc": {
+					"x": [0.5, -1],
+					"y": [0.5],
+					"w": [0.1333],
+					"h": [0.1333],
+					"ox": [-0.5],
+					"oy": [-0.5]
+				},
+				"sb": {},
+				"layer": 10,
+				"image": "tail-right"
+			}
+		},
+		"key3:ShortNote": {
+			"Head": {
+				"cs": 1,
+				"gc": {
+					"x": [0.5, -1],
+					"y": [0.5],
+					"w": [0.1333],
+					"h": [0.1333],
+					"ox": [-0.5],
+					"oy": [-0.5]
+				},
+				"sb": {},
+				"layer": 10,
+				"image": "up"
+			}
+		},
+		"key3:SoundNote": {
+			"Head": {
+				"cs": 1,
+				"gc": {
+					"x": [0.5, -1],
+					"y": [0.5],
+					"w": [0.1333],
+					"h": [0.1333],
+					"ox": [-0.5],
+					"oy": [-0.5]
+				},
+				"sb": {},
+				"layer": 10,
+				"image": "tail-left"
+			}
+		},
+		"key3:LongNote": {
+			"Head": {
+				"cs": 1,
+				"gc": {
+					"x": [0.5, -1],
+					"y": [0.5],
+					"w": [0.1333],
+					"h": [0.1333],
+					"ox": [-0.5],
+					"oy": [-0.5]
+				},
+				"sb": {},
+				"layer": 10,
+				"image": "up"
+			},
+			"Body": {
+				"cs": 1,
+				"gc": {
+					"x": [0.5, -1],
+					"y": [0.5],
+					"w": [0],
+					"h": [0.1333],
+					"ox": [0],
+					"oy": [-0.5]
+				},
+				"sb": {},
+				"layer": 9,
+				"image": "body"
+			},
+			"Tail": {
+				"cs": 1,
+				"gc": {
+					"x": [0.5, -1],
+					"y": [0.5],
+					"w": [0.1333],
+					"h": [0.1333],
+					"ox": [-0.5],
+					"oy": [-0.5]
+				},
+				"sb": {},
+				"layer": 10,
+				"image": "tail-right"
+			}
+		},
+		"key4:ShortNote": {
+			"Head": {
+				"cs": 1,
+				"gc": {
+					"x": [0.5, -1],
+					"y": [0.5],
+					"w": [0.1333],
+					"h": [0.1333],
+					"ox": [-0.5],
+					"oy": [-0.5]
+				},
+				"sb": {},
+				"layer": 10,
+				"image": "right"
+			}
+		},
+		"key4:SoundNote": {
+			"Head": {
+				"cs": 1,
+				"gc": {
+					"x": [0.5, -1],
+					"y": [0.5],
+					"w": [0.1333],
+					"h": [0.1333],
+					"ox": [-0.5],
+					"oy": [-0.5]
+				},
+				"sb": {},
+				"layer": 10,
+				"image": "tail-left"
+			}
+		},
+		"key4:LongNote": {
+			"Head": {
+				"cs": 1,
+				"gc": {
+					"x": [0.5, -1],
+					"y": [0.5],
+					"w": [0.1333],
+					"h": [0.1333],
+					"ox": [-0.5],
+					"oy": [-0.5]
+				},
+				"sb": {},
+				"layer": 10,
+				"image": "right"
+			},
+			"Body": {
+				"cs": 1,
+				"gc": {
+					"x": [0.5, -1],
+					"y": [0.5],
+					"w": [0],
+					"h": [0.1333],
+					"ox": [0],
+					"oy": [-0.5]
+				},
+				"sb": {},
+				"layer": 9,
+				"image": "body"
+			},
+			"Tail": {
+				"cs": 1,
+				"gc": {
+					"x": [0.5, -1],
+					"y": [0.5],
+					"w": [0.1333],
+					"h": [0.1333],
+					"ox": [-0.5],
+					"oy": [-0.5]
+				},
+				"sb": {},
+				"layer": 10,
+				"image": "tail-right"
+			}
+		}
+	}
+}

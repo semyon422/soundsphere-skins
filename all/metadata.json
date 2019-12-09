@@ -8,7 +8,7 @@
 	{
 		"name": "5K1S circle new",
 		"inputMode": "5key1scratch",
-		"type": "json:full-v1-new",
+		"type": "json:full-v2",
 		"path": "noteskin5K1Snew.json"
 	},
 	{

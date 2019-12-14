@@ -1,44 +1,68 @@
 [
 	{
-		"name": "5K1S circle",
-		"inputMode": "5key1scratch",
-		"type": "json:full-v1",
-		"path": "noteskin5K1S.json"
+		"name": "soundsphere 4key circle noteskin toml",
+		"inputMode": "4key",
+		"type": "toml:simple-v1",
+		"path": "noteskin4K.toml"
 	},
 	{
-		"name": "5K1S circle new",
-		"inputMode": "5key1scratch",
-		"type": "json:full-v2",
-		"path": "noteskin5K1Snew.json"
+		"name": "soundsphere 5key circle noteskin toml",
+		"inputMode": "5key",
+		"type": "toml:simple-v1",
+		"path": "noteskin5K.toml"
 	},
 	{
-		"name": "7K1S circle",
+		"name": "soundsphere 5key1scratch circle noteskin toml",
+		"inputMode": "5key1scratch",
+		"type": "toml:simple-v1",
+		"path": "noteskin5K1S.toml"
+	},
+	{
+		"name": "soundsphere 6key circle noteskin toml",
+		"inputMode": "6key",
+		"type": "toml:simple-v1",
+		"path": "noteskin6K.toml"
+	},
+	{
+		"name": "soundsphere 7key circle noteskin toml",
+		"inputMode": "7key",
+		"type": "toml:simple-v1",
+		"path": "noteskin7K.toml"
+	},
+	{
+		"name": "soundsphere 7key1scratch circle noteskin toml",
 		"inputMode": "7key1scratch",
-		"type": "json:full-v1",
-		"path": "noteskin7K1S.json"
+		"type": "toml:simple-v1",
+		"path": "noteskin7K1S.toml"
 	},
 	{
-		"name": "10K2S circle",
-		"inputMode": "10key2scratch",
-		"type": "json:full-v1",
-		"path": "noteskin10K2S.json"
-	},
-	{
-		"name": "14K2S circle",
-		"inputMode": "14key2scratch",
-		"type": "json:full-v1",
-		"path": "noteskin14K2S.json"
-	},
-	{
-		"name": "9K circle",
+		"name": "soundsphere 9key circle noteskin toml",
 		"inputMode": "9key",
-		"type": "json:full-v1",
-		"path": "noteskin9K.json"
+		"type": "toml:simple-v1",
+		"path": "noteskin9K.toml"
 	},
 	{
-		"name": "10K SDVX circle",
+		"name": "soundsphere 10key circle noteskin toml",
+		"inputMode": "10key",
+		"type": "toml:simple-v1",
+		"path": "noteskin10K.toml"
+	},
+	{
+		"name": "soundsphere 10key2scratch circle noteskin toml",
+		"inputMode": "10key2scratch",
+		"type": "toml:simple-v1",
+		"path": "noteskin10K2S.toml"
+	},
+	{
+		"name": "soundsphere 14key2scratch circle noteskin toml",
+		"inputMode": "14key2scratch",
+		"type": "toml:simple-v1",
+		"path": "noteskin14K2S.toml"
+	},
+	{
+		"name": "soundsphere 4bt2fx2laserleft2laserright circle noteskin toml",
 		"inputMode": "4bt2fx2laserleft2laserright",
-		"type": "json:full-v1",
-		"path": "noteskin4bt2fx2laserleft2laserright.json"
+		"type": "toml:simple-v1",
+		"path": "noteskin4bt2fx2laserleft2laserright.toml"
 	}
 ]

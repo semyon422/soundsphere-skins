@@ -1,0 +1,117 @@
+[general]
+name = "soundsphere 5key1scratch circle noteskin toml"
+inputMode = "5key1scratch"
+input = [
+	"scratch1",
+	"key1",
+	"key2",
+	"key3",
+	"key4",
+	"key5"
+]
+unit = 480
+scroll = 1
+
+[columns]
+x = 0
+y = 450
+width = [48, 48, 48, 48, 48, 48]
+height = [48, 48, 48, 48, 48, 48]
+space = [24, 0, 0, 0, 0, 0, 24]
+
+[measureline]
+height = 2
+layer = 0
+image = "pixel.png"
+
+[score]
+[score.score]
+format = "%07d"
+align = ["right", "top"]
+color = [255, 255, 255, 255]
+font = "resources/fonts/SourceCodePro-Semibold.ttf"
+size = 40
+[score.accuracy]
+format = "\n%0.2f"
+align = ["right", "top"]
+color = [255, 255, 255, 255]
+font = "resources/fonts/SourceCodePro-Regular.ttf"
+size = 32
+[score.combo]
+format = "%d"
+align = ["center", "center"]
+color = [255, 255, 255, 95]
+font = "resources/fonts/SourceCodePro-Bold.ttf"
+size = 240
+[score.timegate]
+format = "%s"
+align = ["center", "center"]
+color = [255, 255, 255, 255]
+font = "resources/fonts/SourceCodePro-Regular.ttf"
+size = 28
+
+[keys]
+padding = 0
+width = [48, 48, 48, 48, 48, 48]
+height = [480, 480, 480, 480, 480, 480]
+layer = 4
+pressed = [
+	"key/key-1.png",
+	"key/key-down-1.png",
+	"key/key-up-1.png",
+	"key/key-down-1.png",
+	"key/key-up-1.png",
+	"key/key-down-1.png"
+]
+released = [
+	"key/key-0.png",
+	"key/key-down-0.png",
+	"key/key-up-0.png",
+	"key/key-down-0.png",
+	"key/key-up-0.png",
+	"key/key-down-0.png"
+]
+
+[notes]
+[notes.ShortNote]
+[notes.ShortNote.Head]
+layer = 3
+images = [
+	"note/orange.png",
+	"note/white.png",
+	"note/green.png",
+	"note/white.png",
+	"note/green.png",
+	"note/white.png"
+]
+[notes.LongNote]
+[notes.LongNote.Head]
+layer = 3
+images = [
+	"headtail/orange.png",
+	"headtail/white.png",
+	"headtail/green.png",
+	"headtail/white.png",
+	"headtail/green.png",
+	"headtail/white.png"
+]
+[notes.LongNote.Body]
+layer = 1
+images = [
+	"body/orange.png",
+	"body/white.png",
+	"body/green.png",
+	"body/white.png",
+	"body/green.png",
+	"body/white.png"
+]
+[notes.LongNote.Tail]
+layer = 2
+images = [
+	"headtail/orange.png",
+	"headtail/white.png",
+	"headtail/green.png",
+	"headtail/white.png",
+	"headtail/green.png",
+	"headtail/white.png"
+]

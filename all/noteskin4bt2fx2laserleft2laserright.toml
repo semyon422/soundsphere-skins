@@ -1,0 +1,145 @@
+[general]
+name = "soundsphere 4bt2fx2laserleft2laserright circle noteskin toml"
+inputMode = "4bt2fx2laserleft2laserright"
+input = [
+	"laserleft1",
+	"laserright1",
+	"bt1",
+	"bt2",
+	"fx1",
+	"fx2",
+	"bt3",
+	"bt4",
+	"laserleft2",
+	"laserright2"
+]
+unit = 480
+scroll = 1
+
+[columns]
+x = 0
+y = 450
+width = [48, 48, 48, 48, 48, 48, 48, 48, 48, 48]
+height = [48, 48, 48, 48, 48, 48, 48, 48, 48, 48]
+space = [24, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24]
+
+[measureline]
+height = 2
+layer = 0
+image = "pixel.png"
+
+[score]
+[score.score]
+format = "%07d"
+align = ["right", "top"]
+color = [255, 255, 255, 255]
+font = "resources/fonts/SourceCodePro-Semibold.ttf"
+size = 40
+[score.accuracy]
+format = "\n%0.2f"
+align = ["right", "top"]
+color = [255, 255, 255, 255]
+font = "resources/fonts/SourceCodePro-Regular.ttf"
+size = 32
+[score.combo]
+format = "%d"
+align = ["center", "center"]
+color = [255, 255, 255, 95]
+font = "resources/fonts/SourceCodePro-Bold.ttf"
+size = 240
+[score.timegate]
+format = "%s"
+align = ["center", "center"]
+color = [255, 255, 255, 255]
+font = "resources/fonts/SourceCodePro-Regular.ttf"
+size = 28
+
+[keys]
+padding = 0
+width = [48, 48, 48, 48, 48, 48, 48, 48, 48, 48]
+height = [480, 480, 480, 480, 480, 480, 480, 480, 480, 480]
+layer = 4
+pressed = [
+	"key/key-1.png",
+	"key/key-1.png",
+	"key/key-up-1.png",
+	"key/key-up-1.png",
+	"key/key-down-1.png",
+	"key/key-down-1.png",
+	"key/key-up-1.png",
+	"key/key-up-1.png",
+	"key/key-1.png",
+	"key/key-1.png"
+]
+released = [
+	"key/key-0.png",
+	"key/key-0.png",
+	"key/key-up-0.png",
+	"key/key-up-0.png",
+	"key/key-down-0.png",
+	"key/key-down-0.png",
+	"key/key-up-0.png",
+	"key/key-up-0.png",
+	"key/key-0.png",
+	"key/key-0.png"
+]
+
+[notes]
+[notes.ShortNote]
+[notes.ShortNote.Head]
+layer = 3
+images = [
+	"note/blue.png",
+	"note/blue.png",
+	"note/white.png",
+	"note/white.png",
+	"note/orange.png",
+	"note/orange.png",
+	"note/white.png",
+	"note/white.png",
+	"note/green.png",
+	"note/green.png"
+]
+[notes.LongNote]
+[notes.LongNote.Head]
+layer = 3
+images = [
+	"headtail/blue.png",
+	"headtail/blue.png",
+	"headtail/white.png",
+	"headtail/white.png",
+	"headtail/orange.png",
+	"headtail/orange.png",
+	"headtail/white.png",
+	"headtail/white.png",
+	"headtail/green.png",
+	"headtail/green.png"
+]
+[notes.LongNote.Body]
+layer = 1
+images = [
+	"body/blue.png",
+	"body/blue.png",
+	"body/white.png",
+	"body/white.png",
+	"body/orange.png",
+	"body/orange.png",
+	"body/white.png",
+	"body/white.png",
+	"body/green.png",
+	"body/green.png"
+]
+[notes.LongNote.Tail]
+layer = 2
+images = [
+	"headtail/blue.png",
+	"headtail/blue.png",
+	"headtail/white.png",
+	"headtail/white.png",
+	"headtail/orange.png",
+	"headtail/orange.png",
+	"headtail/white.png",
+	"headtail/white.png",
+	"headtail/green.png",
+	"headtail/green.png"
+]

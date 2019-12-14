@@ -3,66 +3,66 @@
 		"name": "soundsphere 4key circle noteskin toml",
 		"inputMode": "4key",
 		"type": "toml:simple-v1",
-		"path": "noteskin4K.toml"
+		"path": "4key.toml"
 	},
 	{
 		"name": "soundsphere 5key circle noteskin toml",
 		"inputMode": "5key",
 		"type": "toml:simple-v1",
-		"path": "noteskin5K.toml"
+		"path": "5key.toml"
 	},
 	{
 		"name": "soundsphere 5key1scratch circle noteskin toml",
 		"inputMode": "5key1scratch",
 		"type": "toml:simple-v1",
-		"path": "noteskin5K1S.toml"
+		"path": "5key1scratch.toml"
 	},
 	{
 		"name": "soundsphere 6key circle noteskin toml",
 		"inputMode": "6key",
 		"type": "toml:simple-v1",
-		"path": "noteskin6K.toml"
+		"path": "6key.toml"
 	},
 	{
 		"name": "soundsphere 7key circle noteskin toml",
 		"inputMode": "7key",
 		"type": "toml:simple-v1",
-		"path": "noteskin7K.toml"
+		"path": "7key.toml"
 	},
 	{
 		"name": "soundsphere 7key1scratch circle noteskin toml",
 		"inputMode": "7key1scratch",
 		"type": "toml:simple-v1",
-		"path": "noteskin7K1S.toml"
+		"path": "7key1scratch.toml"
 	},
 	{
 		"name": "soundsphere 9key circle noteskin toml",
 		"inputMode": "9key",
 		"type": "toml:simple-v1",
-		"path": "noteskin9K.toml"
+		"path": "9key.toml"
 	},
 	{
 		"name": "soundsphere 10key circle noteskin toml",
 		"inputMode": "10key",
 		"type": "toml:simple-v1",
-		"path": "noteskin10K.toml"
+		"path": "10key.toml"
 	},
 	{
 		"name": "soundsphere 10key2scratch circle noteskin toml",
 		"inputMode": "10key2scratch",
 		"type": "toml:simple-v1",
-		"path": "noteskin10K2S.toml"
+		"path": "10key2scratch.toml"
 	},
 	{
 		"name": "soundsphere 14key2scratch circle noteskin toml",
 		"inputMode": "14key2scratch",
 		"type": "toml:simple-v1",
-		"path": "noteskin14K2S.toml"
+		"path": "14key2scratch.toml"
 	},
 	{
 		"name": "soundsphere 4bt2fx2laserleft2laserright circle noteskin toml",
 		"inputMode": "4bt2fx2laserleft2laserright",
 		"type": "toml:simple-v1",
-		"path": "noteskin4bt2fx2laserleft2laserright.toml"
+		"path": "4bt2fx2laserleft2laserright.toml"
 	}
 ]

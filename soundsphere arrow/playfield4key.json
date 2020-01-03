@@ -1,70 +1,91 @@
 [
 	{
-		"type": "score", "field": "score",
+		"class": "AccuracyGraph",
+		"x": 0.25, "y": 0.25, "w": 0.5, "h": 0.5, "r": 0.002,
+		"lineColor": [255, 255, 255, 127],
+		"layer": 0,
+		"cs": [0, 0, 0, 0, "all"],
+		"color": [127, 127, 127, 255]
+	},
+	{
+		"class": "ProgressBar",
+		"x": 0, "y": 0.995, "w": 1, "h": 0.005,
+		"color": [255, 255, 255, 255],
+		"layer": 0,
+		"cs": [0, 0, 0, 0, "all"],
+		"direction": "left-right",
+		"mode": "+"
+	},
+	{
+		"class": "ScoreDisplay", "field": "score",
 		"format": "%07d",
-		"x": -0.5, "y": 0, "w": 0.5, "h": 0.1, "layer": 20, "cs": 2,
+		"x": 0, "y": 0, "w": 1, "h": 0.1, "layer": 20,
 		"align": {"x": "right", "y": "top"},
 		"color": [255, 255, 255, 255],
 		"font": "resources/fonts/SourceCodePro-Semibold.ttf",
-		"size": 40
+		"size": 40,
+		"cs": [0, 0, 0, 0, "all"]
 	},
 	{
-		"type": "score", "field": "accuracy",
+		"class": "ScoreDisplay", "field": "accuracy",
 		"format": "%0.2f",
-		"x": -0.5, "y": 0.07, "w": 0.5, "h": 0.1, "layer": 20, "cs": 2,
+		"x": 0, "y": 0.07, "w": 1, "h": 0.1, "layer": 20,
 		"align": {"x": "right", "y": "top"},
 		"color": [255, 255, 255, 255],
 		"font": "resources/fonts/SourceCodePro-Regular.ttf",
-		"size": 30
+		"size": 30,
+		"cs": [0, 0, 0, 0, "all"]
 	},
 	{
-		"type": "score", "field": "combo",
+		"class": "ScoreDisplay", "field": "combo",
 		"format": "%d",
-		"x": -0.5, "y": 0, "w": 1, "h": 1, "layer": 20, "cs": 1,
+		"x": -0.5, "y": 0, "w": 1, "h": 1, "layer": 20,
 		"align": {"x": "center", "y": "center"},
 		"color": [255, 255, 255, 95],
 		"font": "resources/fonts/SourceCodePro-Bold.ttf",
-		"size": 240
+		"size": 240,
+		"cs": [0.5, 0, 0, 0, "h"]
 	},
 	{
-		"type": "score", "field": "timegate",
+		"class": "ScoreDisplay", "field": "timegate",
 		"format": "%s",
-		"x": -0.5, "y": 0, "w": 1, "h": 1, "layer": 21, "cs": 1,
+		"x": -0.5, "y": 0, "w": 1, "h": 1, "layer": 21,
 		"align": {"x": "center", "y": "center"},
 		"color": [255, 255, 255, 255],
 		"font": "resources/fonts/SourceCodePro-Regular.ttf",
-		"size": 28
+		"size": 28,
+		"cs": [0.5, 0, 0, 0, "h"]
 	},
 	{
-		"type": "input",
+		"class": "InputImage",
 		"inputType": "key", "inputIndex": 1,
 		"x": -0.2666, "y": 0.8042, "w": 0.1333, "h": 0.1333, "layer": 20,
 		"released": "key/left0.png",
 		"pressed": "key/left1.png",
-		"cs": 1
+		"cs": [0.5, 0, 0, 0, "h"]
 	},
 	{
-		"type": "input",
+		"class": "InputImage",
 		"inputType": "key", "inputIndex": 2,
 		"x": -0.1333, "y": 0.8042, "w": 0.1333, "h": 0.1333, "layer": 20,
 		"released": "key/down0.png",
 		"pressed": "key/down1.png",
-		"cs": 1
+		"cs": [0.5, 0, 0, 0, "h"]
 	},
 	{
-		"type": "input",
+		"class": "InputImage",
 		"inputType": "key", "inputIndex": 3,
 		"x": 0, "y": 0.8042, "w": 0.1333, "h": 0.1333, "layer": 20,
 		"released": "key/up0.png",
 		"pressed": "key/up1.png",
-		"cs": 1
+		"cs": [0.5, 0, 0, 0, "h"]
 	},
 	{
-		"type": "input",
+		"class": "InputImage",
 		"inputType": "key", "inputIndex": 4,
 		"x": 0.1333, "y": 0.8042, "w": 0.1333, "h": 0.1333, "layer": 20,
 		"released": "key/right0.png",
 		"pressed": "key/right1.png",
-		"cs": 1
+		"cs": [0.5, 0, 0, 0, "h"]
 	}
 ]

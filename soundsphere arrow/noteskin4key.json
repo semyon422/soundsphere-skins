@@ -3,7 +3,7 @@
 	"playfield": "playfield4key.json",
 	"cses": [
 		[0.5, 0, 0, 0, "h"],
-		[1, 0, 0, 0, "h"],
+		[0, 0, 0, 0, "all"],
 	],
 	"images": [
 		{"name": "left", "path": "note/left.png", "layer": 3},

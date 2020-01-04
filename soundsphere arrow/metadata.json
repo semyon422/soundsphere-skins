@@ -12,6 +12,24 @@
 		"path": "4key.toml"
 	},
 	{
+		"name": "soundsphere 4key arrow2 noteskin toml",
+		"inputMode": "4key",
+		"type": "toml:simple-v1",
+		"path": "4key2.toml"
+	},
+	{
+		"name": "soundsphere 6key arrow noteskin toml",
+		"inputMode": "6key",
+		"type": "toml:simple-v1",
+		"path": "6key.toml"
+	},
+	{
+		"name": "soundsphere 6key arrow2 noteskin toml",
+		"inputMode": "6key",
+		"type": "toml:simple-v1",
+		"path": "6key2.toml"
+	},
+	{
 		"name": "soundsphere 4key upscroll arrow noteskin toml",
 		"inputMode": "4key",
 		"type": "toml:simple-v1",

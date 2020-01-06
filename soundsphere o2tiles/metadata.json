@@ -1,8 +1,8 @@
 [
 	{
-		"name": "soundsphere 7key o2tiles noteskin toml",
+		"name": "soundsphere 7key o2tiles noteskin toml-v2",
 		"inputMode": "7key",
-		"type": "toml:simple-v1",
+		"type": "toml:simple-v2",
 		"path": "7key.toml"
 	}
 ]

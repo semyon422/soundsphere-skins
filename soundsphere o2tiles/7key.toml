@@ -1,5 +1,5 @@
 [general]
-name = "soundsphere 7key o2tiles noteskin toml"
+name = "soundsphere 7key o2tiles noteskin toml-v2"
 inputMode = "7key"
 input = [
 	"key1",
@@ -14,42 +14,24 @@ unit = 600
 scroll = 1
 
 [columns]
-x = 0
+x = 5
 y = 480
+align = "left"
 width = [28, 22, 28, 32, 28, 22, 28]
 height = [7, 7, 7, 7, 7, 7, 7]
 space = [0, 0, 0, 0, 0, 0, 0, 0]
+
+[guidelines]
+layer = 5
+y = 0
+width = [0, 0, 0, 0, 0, 0, 0, 0]
+height = [480, 480, 480, 480, 480, 480, 480, 480]
+images = ["pixel.png", "pixel.png", "pixel.png", "pixel.png", "pixel.png", "pixel.png", "pixel.png", "pixel.png"]
 
 [measureline]
 height = 1
 layer = 0
 image = "pixel.png"
-
-[score]
-[score.score]
-format = "%07d\n "
-align = ["center", "bottom"]
-color = [255, 255, 255, 255]
-font = "resources/fonts/SourceCodePro-Semibold.ttf"
-size = 28
-[score.accuracy]
-format = "%0.2f"
-align = ["center", "bottom"]
-color = [255, 255, 255, 255]
-font = "resources/fonts/SourceCodePro-Regular.ttf"
-size = 22
-[score.combo]
-format = "%d"
-align = ["center", "center"]
-color = [255, 255, 255, 127]
-font = "resources/fonts/SourceCodePro-Bold.ttf"
-size = 160
-[score.timegate]
-format = "%s"
-align = ["center", "center"]
-color = [255, 255, 255, 255]
-font = "resources/fonts/SourceCodePro-Regular.ttf"
-size = 28
 
 [keys]
 padding = 0
@@ -122,3 +104,71 @@ images = [
 	"blue.png",
 	"white.png"
 ]
+
+[playfield]
+[playfield.score]
+class = "ScoreDisplay"
+field = "score"
+format = "%07d"
+align = ["center", "center"]
+color = [255, 255, 255, 255]
+font = "resources/fonts/SourceCodePro-Semibold.ttf"
+size = 32
+xywh = [0, 540, 600, 30]
+origin = "lane"
+layer = 5
+[playfield.accuracy]
+class = "ScoreDisplay"
+field = "accuracy"
+format = "%0.2f"
+align = ["center", "center"]
+color = [255, 255, 255, 255]
+font = "resources/fonts/SourceCodePro-Regular.ttf"
+size = 24
+xywh = [0, 570, 600, 30]
+origin = "lane"
+layer = 5
+[playfield.combo]
+class = "ScoreDisplay"
+field = "combo"
+format = "%d"
+align = ["center", "center"]
+color = [255, 191, 0, 255]
+font = "resources/fonts/SourceCodePro-Bold.ttf"
+size = 80
+xywh = [0, 0, 600, 360]
+origin = "lane"
+layer = 5
+[playfield.timegate]
+class = "ScoreDisplay"
+field = "timegate"
+format = "%s"
+align = ["center", "center"]
+color = [255, 255, 255, 255]
+font = "resources/fonts/SourceCodePro-Regular.ttf"
+size = 28
+xywh = [0, 0, 600, 600]
+origin = "lane"
+layer = 5
+[playfield.accuracyGraph]
+class = "AccuracyGraph"
+r = 1
+lineColor = [255, 255, 255, 127]
+color = [127, 127, 127, 255]
+xywh = [399, 0, 600, 600]
+origin = "lane"
+layer = 0
+[playfield.progressBar]
+class = "ProgressBar"
+color = [255, 255, 255, 255]
+direction = "up-down"
+mode = "-"
+xywh = [201, 0, 5, 600]
+origin = "lane"
+layer = 0
+[playfield.blackBackground]
+class = "StaticObject"
+xywh = [206, 0, 188, 480]
+image = "black.png"
+origin = "lane"
+layer = 0

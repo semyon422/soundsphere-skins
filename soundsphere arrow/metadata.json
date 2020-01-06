@@ -8,31 +8,31 @@
 	{
 		"name": "soundsphere 4key arrow noteskin toml",
 		"inputMode": "4key",
-		"type": "toml:simple-v1",
+		"type": "toml:simple-v2",
 		"path": "4key.toml"
 	},
 	{
 		"name": "soundsphere 4key arrow2 noteskin toml",
 		"inputMode": "4key",
-		"type": "toml:simple-v1",
+		"type": "toml:simple-v2",
 		"path": "4key2.toml"
 	},
 	{
-		"name": "soundsphere 6key arrow noteskin toml",
+		"name": "soundsphere 6key arrow noteskin toml-v2",
 		"inputMode": "6key",
-		"type": "toml:simple-v1",
+		"type": "toml:simple-v2",
 		"path": "6key.toml"
 	},
 	{
-		"name": "soundsphere 6key arrow2 noteskin toml",
+		"name": "soundsphere 6key arrow2 noteskin toml-v2",
 		"inputMode": "6key",
-		"type": "toml:simple-v1",
+		"type": "toml:simple-v2",
 		"path": "6key2.toml"
 	},
 	{
 		"name": "soundsphere 4key upscroll arrow noteskin toml",
 		"inputMode": "4key",
-		"type": "toml:simple-v1",
+		"type": "toml:simple-v2",
 		"path": "4key_upscroll.toml"
 	},
 	{

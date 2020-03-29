@@ -29,6 +29,7 @@
 					"ox": ["number", -0.5],
 					"oy": ["number", -0.5]
 				},
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "line"
 			},
@@ -55,6 +56,7 @@
 					"ox": ["number", -0.5],
 					"oy": ["number", -0.5]
 				},
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "void"
 			}
@@ -70,6 +72,7 @@
 					"ox": ["number", -0.5],
 					"oy": ["number", -0.5]
 				},
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "left"
 			}
@@ -85,6 +88,7 @@
 					"ox": ["number", -0.5],
 					"oy": ["number", -0.5]
 				},
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "left"
 			}
@@ -100,6 +104,7 @@
 					"ox": ["number", -0.5],
 					"oy": ["number", -0.5]
 				},
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "down"
 			}
@@ -115,6 +120,7 @@
 					"ox": ["number", -0.5],
 					"oy": ["number", -0.5]
 				},
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "down"
 			}
@@ -130,6 +136,7 @@
 					"ox": ["number", -0.5],
 					"oy": ["number", -0.5]
 				},
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "up"
 			}
@@ -145,6 +152,7 @@
 					"ox": ["number", -0.5],
 					"oy": ["number", -0.5]
 				},
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "up"
 			}
@@ -160,6 +168,7 @@
 					"ox": ["number", -0.5],
 					"oy": ["number", -0.5]
 				},
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "right"
 			}
@@ -175,6 +184,7 @@
 					"ox": ["number", -0.5],
 					"oy": ["number", -0.5]
 				},
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "right"
 			}

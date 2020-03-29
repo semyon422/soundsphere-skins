@@ -1,6 +1,7 @@
 {
 	"name": "soundsphere 4key arc perspective noteskin",
 	"playfield": "playfield4key.json",
+	"env": "env.lua",
 	"cses": [
 		[0.5, 0.5, 0, 0, "h"],
 		[0, 0, 0, 0, "all"],
@@ -13,10 +14,6 @@
 		{"name": "line", "path": "line.png", "layer": 0},
 		{"name": "void", "path": "void.png", "layer": 0},
 	],
-	"functions": [
-		{"name": "number", "chunk": "return function(_, n) return n end"},
-		{"name": "scale", "chunk": "return function(timeState) return 0.375 / (timeState.scaledVisualDeltaTime + 1) end"}
-	],
 	"notes": {
 		"measure1:LongNote": {
 			"Head": {
@@ -24,8 +21,8 @@
 				"gc": {
 					"x": ["number", 0],
 					"y": ["number", 0],
-					"w": ["scale"],
-					"h": ["scale"],
+					"w": ["perspective"],
+					"h": ["perspective"],
 					"ox": ["number", -0.5],
 					"oy": ["number", -0.5]
 				},
@@ -38,8 +35,8 @@
 				"gc": {
 					"x": ["number", 0],
 					"y": ["number", 0],
-					"w": ["scale"],
-					"h": ["scale"],
+					"w": ["perspective"],
+					"h": ["perspective"],
 					"ox": ["number", -0.5],
 					"oy": ["number", -0.5]
 				},
@@ -51,8 +48,8 @@
 				"gc": {
 					"x": ["number", 0],
 					"y": ["number", 0],
-					"w": ["scale"],
-					"h": ["scale"],
+					"w": ["perspective"],
+					"h": ["perspective"],
 					"ox": ["number", -0.5],
 					"oy": ["number", -0.5]
 				},
@@ -67,8 +64,8 @@
 				"gc": {
 					"x": ["number", 0],
 					"y": ["number", 0],
-					"w": ["scale"],
-					"h": ["scale"],
+					"w": ["perspective"],
+					"h": ["perspective"],
 					"ox": ["number", -0.5],
 					"oy": ["number", -0.5]
 				},
@@ -83,8 +80,8 @@
 				"gc": {
 					"x": ["number", 0],
 					"y": ["number", 0],
-					"w": ["scale"],
-					"h": ["scale"],
+					"w": ["perspective"],
+					"h": ["perspective"],
 					"ox": ["number", -0.5],
 					"oy": ["number", -0.5]
 				},
@@ -99,8 +96,8 @@
 				"gc": {
 					"x": ["number", 0],
 					"y": ["number", 0],
-					"w": ["scale"],
-					"h": ["scale"],
+					"w": ["perspective"],
+					"h": ["perspective"],
 					"ox": ["number", -0.5],
 					"oy": ["number", -0.5]
 				},
@@ -115,8 +112,8 @@
 				"gc": {
 					"x": ["number", 0],
 					"y": ["number", 0],
-					"w": ["scale"],
-					"h": ["scale"],
+					"w": ["perspective"],
+					"h": ["perspective"],
 					"ox": ["number", -0.5],
 					"oy": ["number", -0.5]
 				},
@@ -131,8 +128,8 @@
 				"gc": {
 					"x": ["number", 0],
 					"y": ["number", 0],
-					"w": ["scale"],
-					"h": ["scale"],
+					"w": ["perspective"],
+					"h": ["perspective"],
 					"ox": ["number", -0.5],
 					"oy": ["number", -0.5]
 				},
@@ -147,8 +144,8 @@
 				"gc": {
 					"x": ["number", 0],
 					"y": ["number", 0],
-					"w": ["scale"],
-					"h": ["scale"],
+					"w": ["perspective"],
+					"h": ["perspective"],
 					"ox": ["number", -0.5],
 					"oy": ["number", -0.5]
 				},
@@ -163,8 +160,8 @@
 				"gc": {
 					"x": ["number", 0],
 					"y": ["number", 0],
-					"w": ["scale"],
-					"h": ["scale"],
+					"w": ["perspective"],
+					"h": ["perspective"],
 					"ox": ["number", -0.5],
 					"oy": ["number", -0.5]
 				},
@@ -179,8 +176,8 @@
 				"gc": {
 					"x": ["number", 0],
 					"y": ["number", 0],
-					"w": ["scale"],
-					"h": ["scale"],
+					"w": ["perspective"],
+					"h": ["perspective"],
 					"ox": ["number", -0.5],
 					"oy": ["number", -0.5]
 				},

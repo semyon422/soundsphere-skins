@@ -1,6 +1,7 @@
 {
 	"name": "soundsphere 4key arrow noteskin horizontal",
 	"playfield": "playfield4key_horizontal.json",
+	"env": "env4key.lua",
 	"cses": [
 		[0, 0, 0, 0, "h"],
 		[1, 0, 0, 0, "h"],
@@ -14,10 +15,6 @@
 		{"name": "tail-left", "path": "note/tail-left.png", "layer": 2},
 		{"name": "body", "path": "note/body-h.png", "layer": 1},
 		{"name": "pixel", "path": "pixel.png", "layer": 0}
-	],
-	"functions": [
-		{"name": "number", "chunk": "return function(_, n) return n end"},
-		{"name": "linear", "chunk": "return function(timeState, data) return data[1] + data[2] * (timeState.scaledFakeVisualDeltaTime or timeState.scaledVisualDeltaTime) end"}
 	],
 	"notes": {
 		"measure1:LongNote": {

@@ -2,8 +2,14 @@
 	{
 		"name": "soundsphere 4key arrow noteskin json",
 		"inputMode": "4key",
-		"type": "json:full-v2",
+		"type": "json:full-v3",
 		"path": "noteskin4key.json"
+	},
+	{
+		"name": "soundsphere 4key arrow noteskin test json",
+		"inputMode": "4key",
+		"type": "json:full-v3",
+		"path": "noteskin4key_test.json"
 	},
 	{
 		"name": "soundsphere 4key arrow noteskin toml",
@@ -38,7 +44,7 @@
 	{
 		"name": "soundsphere 4key arrow noteskin horizontal",
 		"inputMode": "4key",
-		"type": "json:full-v2",
+		"type": "json:full-v3",
 		"path": "noteskin4key_horizontal.json"
 	}
 ]

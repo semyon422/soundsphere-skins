@@ -2,13 +2,13 @@
 	{
 		"name": "soundsphere 4key arc perspective noteskin",
 		"inputMode": "4key",
-		"type": "json:full-v2",
+		"type": "json:full-v3",
 		"path": "noteskin4key-perspective.json"
 	},
 	{
 		"name": "soundsphere 4key arc exponential noteskin",
 		"inputMode": "4key",
-		"type": "json:full-v2",
+		"type": "json:full-v3",
 		"path": "noteskin4key-exponential.json"
 	}
 ]

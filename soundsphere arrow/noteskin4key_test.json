@@ -1,10 +1,10 @@
 {
 	"name": "soundsphere 4key arrow noteskin",
 	"playfield": "playfield4key.json",
-	"env": "env4key.lua",
+	"env": "env4key_test.lua",
 	"cses": [
 		[0.5, 0, 0, 0, "h"],
-		[0, 0, 0, 0, "all"],
+		[0, 0, 0, 0, "all"]
 	],
 	"images": [
 		{"name": "left", "path": "note/left.png", "layer": 3},
@@ -21,21 +21,21 @@
 			"Head": {
 				"cs": 1,
 				"gc": {
-					"x": ["number", -0.333],
+					"x": ["key1x", -0.333],
 					"y": ["linear", [0.9375, 1]],
 					"w": ["number", 0],
 					"h": ["number", 0],
 					"ox": ["number", 0],
 					"oy": ["number", 0]
 				},
-				"drawInterval": [-0.2, 1],
+				"drawInterval": [-1, 1],
 				"layer": 8,
 				"image": "pixel"
 			},
 			"Body": {
 				"cs": 1,
 				"gc": {
-					"x": ["number", -0.333],
+					"x": ["key1x", -0.333],
 					"y": ["linear", [0.9375, 1]],
 					"w": ["number", 0.666],
 					"h": ["number", 0.005],
@@ -48,14 +48,14 @@
 			"Tail": {
 				"cs": 1,
 				"gc": {
-					"x": ["number", -0.333],
+					"x": ["key1x", -0.333],
 					"y": ["linear", [0.9375, 1]],
 					"w": ["number", 0],
 					"h": ["number", 0],
 					"ox": ["number", 0],
 					"oy": ["number", 0]
 				},
-				"drawInterval": [-0.2, 1],
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "pixel"
 			}
@@ -64,14 +64,14 @@
 			"Head": {
 				"cs": 1,
 				"gc": {
-					"x": ["number", -0.2666],
+					"x": ["key1x", -0.2666],
 					"y": ["linear", [0.9375, 1]],
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", 0],
 					"oy": ["number", -1]
 				},
-				"drawInterval": [-0.2, 1],
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "left"
 			}
@@ -80,14 +80,14 @@
 			"Head": {
 				"cs": 1,
 				"gc": {
-					"x": ["number", -0.2666],
+					"x": ["key1x", -0.2666],
 					"y": ["linear", [0.9375, 1]],
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", 0],
 					"oy": ["number", -1]
 				},
-				"drawInterval": [-0.2, 1],
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "tail-down"
 			}
@@ -96,21 +96,21 @@
 			"Head": {
 				"cs": 1,
 				"gc": {
-					"x": ["number", -0.2666],
+					"x": ["key1x", -0.2666],
 					"y": ["linear", [0.9375, 1]],
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", 0],
 					"oy": ["number", -1]
 				},
-				"drawInterval": [-0.2, 1],
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "left"
 			},
 			"Body": {
 				"cs": 1,
 				"gc": {
-					"x": ["number", -0.2666],
+					"x": ["key1x", -0.2666],
 					"y": ["linear", [0.9375, 1]],
 					"w": ["number", 0.1333],
 					"h": ["number", 0],
@@ -123,14 +123,14 @@
 			"Tail": {
 				"cs": 1,
 				"gc": {
-					"x": ["number", -0.2666],
+					"x": ["key1x", -0.2666],
 					"y": ["linear", [0.9375, 1]],
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", 0],
 					"oy": ["number", -1]
 				},
-				"drawInterval": [-0.2, 1],
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "tail-up"
 			}
@@ -139,14 +139,14 @@
 			"Head": {
 				"cs": 1,
 				"gc": {
-					"x": ["number", -0.1333],
+					"x": ["key1x", -0.1333],
 					"y": ["linear", [0.9375, 1]],
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", 0],
 					"oy": ["number", -1]
 				},
-				"drawInterval": [-0.2, 1],
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "down"
 			}
@@ -155,14 +155,14 @@
 			"Head": {
 				"cs": 1,
 				"gc": {
-					"x": ["number", -0.1333],
+					"x": ["key1x", -0.1333],
 					"y": ["linear", [0.9375, 1]],
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", 0],
 					"oy": ["number", -1]
 				},
-				"drawInterval": [-0.2, 1],
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "tail-down"
 			}
@@ -171,21 +171,21 @@
 			"Head": {
 				"cs": 1,
 				"gc": {
-					"x": ["number", -0.1333],
+					"x": ["key1x", -0.1333],
 					"y": ["linear", [0.9375, 1]],
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", 0],
 					"oy": ["number", -1]
 				},
-				"drawInterval": [-0.2, 1],
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "down"
 			},
 			"Body": {
 				"cs": 1,
 				"gc": {
-					"x": ["number", -0.1333],
+					"x": ["key1x", -0.1333],
 					"y": ["linear", [0.9375, 1]],
 					"w": ["number", 0.1333],
 					"h": ["number", 0],
@@ -198,14 +198,14 @@
 			"Tail": {
 				"cs": 1,
 				"gc": {
-					"x": ["number", -0.1333],
+					"x": ["key1x", -0.1333],
 					"y": ["linear", [0.9375, 1]],
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", 0],
 					"oy": ["number", -1]
 				},
-				"drawInterval": [-0.2, 1],
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "tail-up"
 			}
@@ -214,14 +214,14 @@
 			"Head": {
 				"cs": 1,
 				"gc": {
-					"x": ["number", 0],
+					"x": ["key1x", 0],
 					"y": ["linear", [0.9375, 1]],
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", 0],
 					"oy": ["number", -1]
 				},
-				"drawInterval": [-0.2, 1],
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "up"
 			}
@@ -230,14 +230,14 @@
 			"Head": {
 				"cs": 1,
 				"gc": {
-					"x": ["number", 0],
+					"x": ["key1x", 0],
 					"y": ["linear", [0.9375, 1]],
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", 0],
 					"oy": ["number", -1]
 				},
-				"drawInterval": [-0.2, 1],
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "tail-down"
 			}
@@ -246,21 +246,21 @@
 			"Head": {
 				"cs": 1,
 				"gc": {
-					"x": ["number", 0],
+					"x": ["key1x", 0],
 					"y": ["linear", [0.9375, 1]],
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", 0],
 					"oy": ["number", -1]
 				},
-				"drawInterval": [-0.2, 1],
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "up"
 			},
 			"Body": {
 				"cs": 1,
 				"gc": {
-					"x": ["number", 0],
+					"x": ["key1x", 0],
 					"y": ["linear", [0.9375, 1]],
 					"w": ["number", 0.1333],
 					"h": ["number", 0],
@@ -273,14 +273,14 @@
 			"Tail": {
 				"cs": 1,
 				"gc": {
-					"x": ["number", 0],
+					"x": ["key1x", 0],
 					"y": ["linear", [0.9375, 1]],
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", 0],
 					"oy": ["number", -1]
 				},
-				"drawInterval": [-0.2, 1],
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "tail-up"
 			}
@@ -289,14 +289,14 @@
 			"Head": {
 				"cs": 1,
 				"gc": {
-					"x": ["number", 0.1333],
+					"x": ["key1x", 0.1333],
 					"y": ["linear", [0.9375, 1]],
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", 0],
 					"oy": ["number", -1]
 				},
-				"drawInterval": [-0.2, 1],
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "right"
 			}
@@ -305,14 +305,14 @@
 			"Head": {
 				"cs": 1,
 				"gc": {
-					"x": ["number", 0.1333],
+					"x": ["key1x", 0.1333],
 					"y": ["linear", [0.9375, 1]],
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", 0],
 					"oy": ["number", -1]
 				},
-				"drawInterval": [-0.2, 1],
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "tail-down"
 			}
@@ -321,21 +321,21 @@
 			"Head": {
 				"cs": 1,
 				"gc": {
-					"x": ["number", 0.1333],
+					"x": ["key1x", 0.1333],
 					"y": ["linear", [0.9375, 1]],
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", 0],
 					"oy": ["number", -1]
 				},
-				"drawInterval": [-0.2, 1],
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "right"
 			},
 			"Body": {
 				"cs": 1,
 				"gc": {
-					"x": ["number", 0.1333],
+					"x": ["key1x", 0.1333],
 					"y": ["linear", [0.9375, 1]],
 					"w": ["number", 0.1333],
 					"h": ["number", 0],
@@ -348,14 +348,14 @@
 			"Tail": {
 				"cs": 1,
 				"gc": {
-					"x": ["number", 0.1333],
+					"x": ["key1x", 0.1333],
 					"y": ["linear", [0.9375, 1]],
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", 0],
 					"oy": ["number", -1]
 				},
-				"drawInterval": [-0.2, 1],
+				"drawInterval": [-1, 1],
 				"layer": 10,
 				"image": "tail-up"
 			}

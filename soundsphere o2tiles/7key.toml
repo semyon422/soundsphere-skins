@@ -33,6 +33,9 @@ height = 1
 layer = 0
 image = "pixel.png"
 
+[bga]
+color = [63, 63, 63, 255]
+
 [keys]
 padding = 0
 width = [28, 22, 28, 32, 28, 22, 28]

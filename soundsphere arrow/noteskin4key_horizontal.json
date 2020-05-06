@@ -26,7 +26,8 @@
 					"w": ["number", 0],
 					"h": ["number", 0],
 					"ox": ["number", 0],
-					"oy": ["number", 0]
+					"oy": ["number", 0],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 2],
 				"layer": 8,
@@ -40,7 +41,8 @@
 					"w": ["number", 0.005],
 					"h": ["number", 0.266],
 					"ox": ["number", 0],
-					"oy": ["number", 0]
+					"oy": ["number", 0],
+					"color": ["color"]
 				},
 				"layer": 9,
 				"image": "pixel"
@@ -53,7 +55,8 @@
 					"w": ["number", 0],
 					"h": ["number", 0],
 					"ox": ["number", 0],
-					"oy": ["number", 0]
+					"oy": ["number", 0],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 2],
 				"layer": 10,
@@ -69,7 +72,8 @@
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 2],
 				"layer": 10,
@@ -85,7 +89,8 @@
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 2],
 				"layer": 10,
@@ -101,7 +106,8 @@
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 2],
 				"layer": 10,
@@ -115,7 +121,8 @@
 					"w": ["number", 0],
 					"h": ["number", 0.1333],
 					"ox": ["number", 0],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"layer": 9,
 				"image": "body"
@@ -128,7 +135,8 @@
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 2],
 				"layer": 10,
@@ -144,7 +152,8 @@
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 2],
 				"layer": 10,
@@ -160,7 +169,8 @@
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 2],
 				"layer": 10,
@@ -176,7 +186,8 @@
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 2],
 				"layer": 10,
@@ -190,7 +201,8 @@
 					"w": ["number", 0],
 					"h": ["number", 0.1333],
 					"ox": ["number", 0],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"layer": 9,
 				"image": "body"
@@ -203,7 +215,8 @@
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 2],
 				"layer": 10,
@@ -219,7 +232,8 @@
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 2],
 				"layer": 10,
@@ -235,7 +249,8 @@
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 2],
 				"layer": 10,
@@ -251,7 +266,8 @@
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 2],
 				"layer": 10,
@@ -265,7 +281,8 @@
 					"w": ["number", 0],
 					"h": ["number", 0.1333],
 					"ox": ["number", 0],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"layer": 9,
 				"image": "body"
@@ -278,7 +295,8 @@
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 2],
 				"layer": 10,
@@ -294,7 +312,8 @@
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 2],
 				"layer": 10,
@@ -310,7 +329,8 @@
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 2],
 				"layer": 10,
@@ -326,7 +346,8 @@
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 2],
 				"layer": 10,
@@ -340,7 +361,8 @@
 					"w": ["number", 0],
 					"h": ["number", 0.1333],
 					"ox": ["number", 0],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"layer": 9,
 				"image": "body"
@@ -353,7 +375,8 @@
 					"w": ["number", 0.1333],
 					"h": ["number", 0.1333],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 2],
 				"layer": 10,

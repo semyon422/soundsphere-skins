@@ -24,7 +24,8 @@
 					"w": ["perspective"],
 					"h": ["perspective"],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 1],
 				"layer": 10,
@@ -38,7 +39,8 @@
 					"w": ["perspective"],
 					"h": ["perspective"],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"layer": 10,
 				"image": "void"
@@ -51,7 +53,8 @@
 					"w": ["perspective"],
 					"h": ["perspective"],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 1],
 				"layer": 10,
@@ -67,7 +70,8 @@
 					"w": ["perspective"],
 					"h": ["perspective"],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 1],
 				"layer": 10,
@@ -83,7 +87,8 @@
 					"w": ["perspective"],
 					"h": ["perspective"],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 1],
 				"layer": 10,
@@ -99,7 +104,8 @@
 					"w": ["perspective"],
 					"h": ["perspective"],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 1],
 				"layer": 10,
@@ -115,7 +121,8 @@
 					"w": ["perspective"],
 					"h": ["perspective"],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 1],
 				"layer": 10,
@@ -131,7 +138,8 @@
 					"w": ["perspective"],
 					"h": ["perspective"],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 1],
 				"layer": 10,
@@ -147,7 +155,8 @@
 					"w": ["perspective"],
 					"h": ["perspective"],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 1],
 				"layer": 10,
@@ -163,7 +172,8 @@
 					"w": ["perspective"],
 					"h": ["perspective"],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 1],
 				"layer": 10,
@@ -179,7 +189,8 @@
 					"w": ["perspective"],
 					"h": ["perspective"],
 					"ox": ["number", -0.5],
-					"oy": ["number", -0.5]
+					"oy": ["number", -0.5],
+					"color": ["color"]
 				},
 				"drawInterval": [-1, 1],
 				"layer": 10,

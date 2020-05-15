@@ -38,6 +38,7 @@ image = "pixel.png"
 
 [bga]
 color = [63, 63, 63, 255]
+layer = -1
 
 [keys]
 padding = 0

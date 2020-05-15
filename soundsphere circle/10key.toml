@@ -129,6 +129,21 @@ images = [
 	"headtail/green.png",
 	"headtail/white.png"
 ]
+[notes.SoundNote]
+[notes.SoundNote.Head]
+layer = 3
+images = [
+	"note/red.png",
+	"note/red.png",
+	"note/red.png",
+	"note/red.png",
+	"note/red.png",
+	"note/red.png",
+	"note/red.png",
+	"note/red.png",
+	"note/red.png",
+	"note/red.png"
+]
 
 [playfield]
 [playfield.score]

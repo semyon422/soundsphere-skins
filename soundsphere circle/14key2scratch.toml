@@ -239,13 +239,14 @@ xywh = [0, 0, 480, 475]
 origin = "lane"
 layer = 5
 [playfield.accuracyGraph]
-class = "AccuracyGraph"
+class = "PointGraph"
 r = 1
 lineColor = [255, 255, 255, 127]
 color = [127, 127, 127, 255]
 xywh = [0, 120, 480, 240]
 origin = "lane"
 layer = 0
+counterPath = "hits.lua"
 [playfield.progressBar]
 class = "ProgressBar"
 color = [255, 255, 255, 255]

@@ -1,11 +1,12 @@
 [
 	{
-		"class": "AccuracyGraph",
+		"class": "PointGraph",
 		"x": 0.25, "y": 0.25, "w": 0.5, "h": 0.5, "r": 0.002,
 		"lineColor": [255, 255, 255, 127],
 		"layer": 0,
 		"cs": [0, 0, 0, 0, "all"],
-		"color": [127, 127, 127, 255]
+		"color": [127, 127, 127, 255],
+		"counterPath": "hits.lua"
 	},
 	{
 		"class": "ProgressBar",

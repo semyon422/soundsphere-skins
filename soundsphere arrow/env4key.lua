@@ -19,6 +19,10 @@ local colors = {
 	endMissedPassed = {127, 127, 127, 255}
 }
 
+colorWhite = function(timeState, logicalState, data)
+	return colors.clear
+end
+
 color = function(timeState, logicalState, data)
     if logicalState == "clear" or logicalState == "skipped" then
 		return colors.clear

@@ -55,7 +55,7 @@ images = ["note2/tail.png", "note2/tail.png", "note2/tail.png", "note2/tail.png"
 [notes.SoundNote]
 [notes.SoundNote.Head]
 layer = 3
-images = ["note/red.png", "note/red.png", "note/red.png", "note/red.png", "note/red.png", "note/red.png"]
+images = ["note/mine.png", "note/mine.png", "note/mine.png", "note/mine.png", "note/mine.png", "note/mine.png"]
 
 [playfield]
 [playfield.score]

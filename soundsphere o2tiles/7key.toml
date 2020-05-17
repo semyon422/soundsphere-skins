@@ -112,13 +112,13 @@ images = [
 [notes.SoundNote.Head]
 layer = 3
 images = [
-	"note/red.png",
-	"note/red.png",
-	"note/red.png",
-	"note/red.png",
-	"note/red.png",
-	"note/red.png",
-	"note/red.png"
+	"red.png",
+	"red.png",
+	"red.png",
+	"red.png",
+	"red.png",
+	"red.png",
+	"red.png"
 ]
 
 [playfield]

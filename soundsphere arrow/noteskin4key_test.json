@@ -13,6 +13,7 @@
 		{"name": "right", "path": "note/right.png", "layer": 3},
 		{"name": "tail-up", "path": "note/tail-up.png", "layer": 2},
 		{"name": "tail-down", "path": "note/tail-down.png", "layer": 2},
+		{"name": "mine", "path": "note/mine.png", "layer": 2},
 		{"name": "body", "path": "note/body.png", "layer": 1},
 		{"name": "pixel", "path": "pixel.png", "layer": 0}
 	],
@@ -94,7 +95,7 @@
 				},
 				"drawInterval": [-1, 1],
 				"layer": 10,
-				"image": "tail-down"
+				"image": "mine"
 			}
 		},
 		"key1:LongNote": {
@@ -174,7 +175,7 @@
 				},
 				"drawInterval": [-1, 1],
 				"layer": 10,
-				"image": "tail-down"
+				"image": "mine"
 			}
 		},
 		"key2:LongNote": {
@@ -254,7 +255,7 @@
 				},
 				"drawInterval": [-1, 1],
 				"layer": 10,
-				"image": "tail-down"
+				"image": "mine"
 			}
 		},
 		"key3:LongNote": {
@@ -334,7 +335,7 @@
 				},
 				"drawInterval": [-1, 1],
 				"layer": 10,
-				"image": "tail-down"
+				"image": "mine"
 			}
 		},
 		"key4:LongNote": {

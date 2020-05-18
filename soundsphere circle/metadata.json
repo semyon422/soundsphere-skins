@@ -42,6 +42,12 @@
 		"path": "9key.toml"
 	},
 	{
+		"name": "soundsphere 18key circle noteskin toml",
+		"inputMode": "18key",
+		"type": "toml:simple-v2",
+		"path": "18key.toml"
+	},
+	{
 		"name": "soundsphere 10key circle noteskin toml",
 		"inputMode": "10key",
 		"type": "toml:simple-v2",

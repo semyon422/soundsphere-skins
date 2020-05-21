@@ -1,0 +1,14 @@
+[
+	{
+		"name": "soundsphere 16key grid noteskin json",
+		"inputMode": "16key",
+		"type": "json:full-v3",
+		"path": "noteskin16key.json"
+	},
+	{
+		"name": "soundsphere 4key grid noteskin json",
+		"inputMode": "4key",
+		"type": "json:full-v3",
+		"path": "noteskin4key.json"
+	}
+]

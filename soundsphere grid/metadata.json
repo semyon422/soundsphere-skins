@@ -6,6 +6,12 @@
 		"path": "noteskin16key.json"
 	},
 	{
+		"name": "soundsphere 9key grid noteskin json",
+		"inputMode": "9key",
+		"type": "json:full-v3",
+		"path": "noteskin9key.json"
+	},
+	{
 		"name": "soundsphere 4key grid noteskin json",
 		"inputMode": "4key",
 		"type": "json:full-v3",

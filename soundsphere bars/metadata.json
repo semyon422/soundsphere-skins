@@ -2,19 +2,19 @@
 	{
 		"name": "soundsphere 4key bar noteskin toml",
 		"inputMode": "4key",
-		"type": "toml:simple-v2",
+		"type": "toml:simple-v3",
 		"path": "4key.toml"
 	},
 	{
 		"name": "soundsphere 7key bar noteskin toml",
 		"inputMode": "7key",
-		"type": "toml:simple-v2",
+		"type": "toml:simple-v3",
 		"path": "7key.toml"
 	},
 	{
 		"name": "soundsphere 10key bar noteskin toml",
 		"inputMode": "10key",
-		"type": "toml:simple-v2",
+		"type": "toml:simple-v3",
 		"path": "10key.toml"
 	}
 ]

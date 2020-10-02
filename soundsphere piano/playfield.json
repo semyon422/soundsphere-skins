@@ -1,0 +1,1845 @@
+[
+    {
+        "class": "PointGraph",
+        "x": 0.25,
+        "y": 0.25,
+        "w": 0.5,
+        "h": 0.5,
+        "r": 0.002,
+        "lineColor": [
+            255,
+            255,
+            255,
+            127
+        ],
+        "layer": 1,
+        "cs": [
+            0,
+            0,
+            0,
+            0,
+            "all"
+        ],
+        "color": [
+            127,
+            127,
+            127,
+            255
+        ],
+        "counterPath": "hits.lua"
+    },
+    {
+        "image": "Piano.png",
+        "class": "StaticObject",
+        "x": -0.88888888868,
+        "y": 0.814814814814815,
+        "w": 1.77777777778,
+        "h": 0.1851851852,
+        "layer": 9,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "image": "black.png",
+        "class": "StaticObject",
+        "x": -0.88888888868,
+        "y": 0,
+        "w": 1.77777777778,
+        "h": 0.05,
+        "layer": 12,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "color": [
+            200,
+            200,
+            200,
+            229
+        ],
+        "format": "%d",
+        "field": "combo",
+        "align": {
+            "x": "center",
+            "y": "top"
+        },
+        "font": "userdata/skins/soundsphere piano/AldotheApache.ttf",
+        "size": 105,
+        "class": "ScoreDisplay",
+        "x": -0.5,
+        "y": 0.1,
+        "w": 1,
+        "h": 1,
+        "layer": 13,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "color": [
+            255,
+            255,
+            255,
+            255
+        ],
+        "direction": "left-right",
+        "mode": "+",
+        "class": "ProgressBar",
+        "x": -0.88888888868,
+        "y": 0,
+        "w": 1.77777777778,
+        "h": 0.05,
+        "layer": 13,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "color": [
+            255,
+            255,
+            255,
+            229
+        ],
+        "format": "%0.2f",
+        "field": "accuracy",
+        "align": {
+            "x": "center",
+            "y": "top"
+        },
+        "font": "userdata/skins/soundsphere piano/AldotheApache.ttf",
+        "size": 20,
+        "class": "ScoreDisplay",
+        "x": -0.5,
+        "y": 0.55,
+        "w": 1,
+        "h": 1,
+        "layer": 13,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "color": [
+            250,
+            200,
+            50,
+            229
+        ],
+        "format": "%s",
+        "field": "timegate",
+        "align": {
+            "x": "center",
+            "y": "top"
+        },
+        "font": "userdata/skins/soundsphere piano/AldotheApache.ttf",
+        "size": 57,
+        "class": "ScoreDisplay",
+        "x": -0.5,
+        "y": 0.6,
+        "w": 1,
+        "h": 1,
+        "layer": 13,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 1,
+        "released": "blank.png",
+        "pressed": "keyWhite1.png",
+        "class": "InputImage",
+        "x": -0.88888888868,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 2,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": -0.87179487159,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 3,
+        "released": "blank.png",
+        "pressed": "keyWhite2.png",
+        "class": "InputImage",
+        "x": -0.85470085449,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 4,
+        "released": "blank.png",
+        "pressed": "keyWhite1.png",
+        "class": "InputImage",
+        "x": -0.82051282031,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 5,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": -0.80341880322,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 6,
+        "released": "blank.png",
+        "pressed": "keyWhite3.png",
+        "class": "InputImage",
+        "x": -0.78632478612,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 7,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": -0.75783475763,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 8,
+        "released": "blank.png",
+        "pressed": "keyWhite4.png",
+        "class": "InputImage",
+        "x": -0.75213675193,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 9,
+        "released": "blank.png",
+        "pressed": "keyWhite1.png",
+        "class": "InputImage",
+        "x": -0.71794871775,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 10,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": -0.70085470066,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 11,
+        "released": "blank.png",
+        "pressed": "keyWhite5.png",
+        "class": "InputImage",
+        "x": -0.68376068356,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 12,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": -0.66096866077,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 13,
+        "released": "blank.png",
+        "pressed": "keyWhite6.png",
+        "class": "InputImage",
+        "x": -0.64957264937,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 14,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": -0.62108262088,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 15,
+        "released": "blank.png",
+        "pressed": "keyWhite4.png",
+        "class": "InputImage",
+        "x": -0.61538461518,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 16,
+        "released": "blank.png",
+        "pressed": "keyWhite1.png",
+        "class": "InputImage",
+        "x": -0.581196581,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 17,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": -0.56410256391,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 18,
+        "released": "blank.png",
+        "pressed": "keyWhite3.png",
+        "class": "InputImage",
+        "x": -0.54700854681,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 19,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": -0.51851851832,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 20,
+        "released": "blank.png",
+        "pressed": "keyWhite4.png",
+        "class": "InputImage",
+        "x": -0.51282051262,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 21,
+        "released": "blank.png",
+        "pressed": "keyWhite1.png",
+        "class": "InputImage",
+        "x": -0.47863247844,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 22,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": -0.46153846135,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 23,
+        "released": "blank.png",
+        "pressed": "keyWhite5.png",
+        "class": "InputImage",
+        "x": -0.44444444425,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 24,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": -0.42165242146,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 25,
+        "released": "blank.png",
+        "pressed": "keyWhite6.png",
+        "class": "InputImage",
+        "x": -0.41025641006,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 26,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": -0.38176638157,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 27,
+        "released": "blank.png",
+        "pressed": "keyWhite4.png",
+        "class": "InputImage",
+        "x": -0.37606837587,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 28,
+        "released": "blank.png",
+        "pressed": "keyWhite1.png",
+        "class": "InputImage",
+        "x": -0.34188034169,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 29,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": -0.3247863246,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 30,
+        "released": "blank.png",
+        "pressed": "keyWhite3.png",
+        "class": "InputImage",
+        "x": -0.3076923075,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 31,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": -0.27920227901,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 32,
+        "released": "blank.png",
+        "pressed": "keyWhite4.png",
+        "class": "InputImage",
+        "x": -0.27350427331,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 33,
+        "released": "blank.png",
+        "pressed": "keyWhite1.png",
+        "class": "InputImage",
+        "x": -0.23931623913,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 34,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": -0.22222222204,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 35,
+        "released": "blank.png",
+        "pressed": "keyWhite5.png",
+        "class": "InputImage",
+        "x": -0.20512820494,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 36,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": -0.18233618215,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 37,
+        "released": "blank.png",
+        "pressed": "keyWhite6.png",
+        "class": "InputImage",
+        "x": -0.17094017075,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 38,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": -0.14245014226,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 39,
+        "released": "blank.png",
+        "pressed": "keyWhite4.png",
+        "class": "InputImage",
+        "x": -0.13675213656,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 40,
+        "released": "blank.png",
+        "pressed": "keyWhite1.png",
+        "class": "InputImage",
+        "x": -0.10256410238,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 41,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": -0.08547008529,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 42,
+        "released": "blank.png",
+        "pressed": "keyWhite3.png",
+        "class": "InputImage",
+        "x": -0.06837606819,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 43,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": -0.0398860397,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 44,
+        "released": "blank.png",
+        "pressed": "keyWhite4.png",
+        "class": "InputImage",
+        "x": -0.034188034,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 45,
+        "released": "blank.png",
+        "pressed": "keyWhite1.png",
+        "class": "InputImage",
+        "x": 0.00000000018,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 46,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": 0.01709401727,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 47,
+        "released": "blank.png",
+        "pressed": "keyWhite5.png",
+        "class": "InputImage",
+        "x": 0.03418803437,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 48,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": 0.05698005716,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 49,
+        "released": "blank.png",
+        "pressed": "keyWhite6.png",
+        "class": "InputImage",
+        "x": 0.06837606856,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 50,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": 0.09686609705,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 51,
+        "released": "blank.png",
+        "pressed": "keyWhite4.png",
+        "class": "InputImage",
+        "x": 0.10256410275,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 52,
+        "released": "blank.png",
+        "pressed": "keyWhite1.png",
+        "class": "InputImage",
+        "x": 0.13675213693,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 53,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": 0.15384615402,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 54,
+        "released": "blank.png",
+        "pressed": "keyWhite3.png",
+        "class": "InputImage",
+        "x": 0.17094017112,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 55,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": 0.19943019961,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 56,
+        "released": "blank.png",
+        "pressed": "keyWhite4.png",
+        "class": "InputImage",
+        "x": 0.20512820531,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 57,
+        "released": "blank.png",
+        "pressed": "keyWhite1.png",
+        "class": "InputImage",
+        "x": 0.23931623949,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 58,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": 0.25641025658,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 59,
+        "released": "blank.png",
+        "pressed": "keyWhite5.png",
+        "class": "InputImage",
+        "x": 0.27350427368,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 60,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": 0.29629629647,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 61,
+        "released": "blank.png",
+        "pressed": "keyWhite6.png",
+        "class": "InputImage",
+        "x": 0.30769230787,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 62,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": 0.33618233636,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 63,
+        "released": "blank.png",
+        "pressed": "keyWhite4.png",
+        "class": "InputImage",
+        "x": 0.34188034206,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 64,
+        "released": "blank.png",
+        "pressed": "keyWhite1.png",
+        "class": "InputImage",
+        "x": 0.37606837624,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 65,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": 0.39316239333,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 66,
+        "released": "blank.png",
+        "pressed": "keyWhite3.png",
+        "class": "InputImage",
+        "x": 0.41025641043,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 67,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": 0.43874643892,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 68,
+        "released": "blank.png",
+        "pressed": "keyWhite4.png",
+        "class": "InputImage",
+        "x": 0.44444444462,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 69,
+        "released": "blank.png",
+        "pressed": "keyWhite1.png",
+        "class": "InputImage",
+        "x": 0.4786324788,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 70,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": 0.49572649589,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 71,
+        "released": "blank.png",
+        "pressed": "keyWhite5.png",
+        "class": "InputImage",
+        "x": 0.51282051299,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 72,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": 0.53561253578,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 73,
+        "released": "blank.png",
+        "pressed": "keyWhite6.png",
+        "class": "InputImage",
+        "x": 0.54700854718,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 74,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": 0.57549857567,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 75,
+        "released": "blank.png",
+        "pressed": "keyWhite4.png",
+        "class": "InputImage",
+        "x": 0.58119658137,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 76,
+        "released": "blank.png",
+        "pressed": "keyWhite1.png",
+        "class": "InputImage",
+        "x": 0.61538461555,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 77,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": 0.63247863264,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 78,
+        "released": "blank.png",
+        "pressed": "keyWhite3.png",
+        "class": "InputImage",
+        "x": 0.64957264974,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 79,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": 0.67806267823,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 80,
+        "released": "blank.png",
+        "pressed": "keyWhite4.png",
+        "class": "InputImage",
+        "x": 0.68376068393,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 81,
+        "released": "blank.png",
+        "pressed": "keyWhite1.png",
+        "class": "InputImage",
+        "x": 0.71794871811,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 82,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": 0.7350427352,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 83,
+        "released": "blank.png",
+        "pressed": "keyWhite5.png",
+        "class": "InputImage",
+        "x": 0.7521367523,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 84,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": 0.77492877509,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 85,
+        "released": "blank.png",
+        "pressed": "keyWhite6.png",
+        "class": "InputImage",
+        "x": 0.78632478649,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 86,
+        "released": "blank.png",
+        "pressed": "keyBlack.png",
+        "class": "InputImage",
+        "x": 0.81481481498,
+        "y": 0.814814814814815,
+        "w": 0.02279202279,
+        "h": 0.18518518518,
+        "layer": 10,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 87,
+        "released": "blank.png",
+        "pressed": "keyWhite4.png",
+        "class": "InputImage",
+        "x": 0.82051282068,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    },
+    {
+        "inputType": "key",
+        "inputIndex": 88,
+        "released": "blank.png",
+        "pressed": "keyWhite.png",
+        "class": "InputImage",
+        "x": 0.85470085486,
+        "y": 0.814814814814815,
+        "w": 0.03418803418,
+        "h": 0.18518518518,
+        "layer": 11,
+        "cs": [
+            0.5,
+            0,
+            0,
+            0,
+            "h"
+        ]
+    }
+]

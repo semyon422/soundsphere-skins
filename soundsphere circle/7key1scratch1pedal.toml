@@ -1,0 +1,201 @@
+[general]
+name = "soundsphere 7key1scratch1pedal circle noteskin toml"
+inputMode = "7key1scratch1pedal"
+input = [
+	"scratch1",
+	"key1",
+	"key2",
+	"key3",
+	"key4",
+	"key5",
+	"key6",
+	"key7",
+	"pedal1"
+]
+unit = 480
+scroll = 1
+
+[columns]
+x = 0
+y = 450
+align = "center"
+width = [48, 48, 48, 48, 48, 48, 48, 48, 48]
+height = [48, 48, 48, 48, 48, 48, 48, 48, 48]
+space = [24, 0, 0, 0, 0, 0, 0, 0, 0, 24]
+
+[guidelines]
+layer = 5
+y = 0
+width = [0]
+height = [480]
+images = ["pixel.png"]
+
+[measureline]
+height = 2
+layer = 0
+image = "pixel.png"
+
+[bga]
+color = [63, 63, 63, 255]
+layer = -1
+
+[keys]
+padding = 0
+width = [48, 48, 48, 48, 48, 48, 48, 48, 48]
+height = [480, 480, 480, 480, 480, 480, 480, 480, 480]
+layer = 4
+pressed = [
+	"key/key-1.png",
+	"key/key-down-1.png",
+	"key/key-up-1.png",
+	"key/key-down-1.png",
+	"key/key-up-1.png",
+	"key/key-down-1.png",
+	"key/key-up-1.png",
+	"key/key-down-1.png",
+	"key/key-1.png"	
+]
+released = [
+	"key/key-0.png",
+	"key/key-down-0.png",
+	"key/key-up-0.png",
+	"key/key-down-0.png",
+	"key/key-up-0.png",
+	"key/key-down-0.png",
+	"key/key-up-0.png",
+	"key/key-down-0.png",
+	"key/key-0.png"
+]
+
+[notes]
+[notes.ShortNote]
+[notes.ShortNote.Head]
+layer = 3
+images = [
+	"note/orange.png",
+	"note/white.png",
+	"note/green.png",
+	"note/white.png",
+	"note/green.png",
+	"note/white.png",
+	"note/green.png",
+	"note/white.png",
+	"note/yellow.png"
+]
+[notes.LongNote]
+[notes.LongNote.Head]
+layer = 3
+images = [
+	"headtail/orange.png",
+	"headtail/white.png",
+	"headtail/green.png",
+	"headtail/white.png",
+	"headtail/green.png",
+	"headtail/white.png",
+	"headtail/green.png",
+	"headtail/white.png",
+	"headtail/yellow.png"
+]
+[notes.LongNote.Body]
+layer = 1
+images = [
+	"body/orange.png",
+	"body/white.png",
+	"body/green.png",
+	"body/white.png",
+	"body/green.png",
+	"body/white.png",
+	"body/green.png",
+	"body/white.png",
+	"body/yellow.png"
+]
+[notes.LongNote.Tail]
+layer = 2
+images = [
+	"headtail/orange.png",
+	"headtail/white.png",
+	"headtail/green.png",
+	"headtail/white.png",
+	"headtail/green.png",
+	"headtail/white.png",
+	"headtail/green.png",
+	"headtail/white.png",
+	"headtail/yellow.png"
+]
+[notes.SoundNote]
+[notes.SoundNote.Head]
+layer = 3
+images = [
+	"note/red.png",
+	"note/red.png",
+	"note/red.png",
+	"note/red.png",
+	"note/red.png",
+	"note/red.png",
+	"note/red.png",
+	"note/red.png",
+	"note/red.png"
+]
+
+[playfield]
+[playfield.score]
+class = "ScoreDisplay"
+field = "score"
+format = "%07d"
+align = ["right", "top"]
+color = [255, 255, 255, 255]
+font = "resources/fonts/SourceCodePro-Semibold.ttf"
+size = 40
+xywh = [0, 0, 0.993, 1]
+origin = "all"
+layer = 5
+[playfield.accuracy]
+class = "ScoreDisplay"
+field = "accuracy"
+format = "%0.2f"
+align = ["right", "top"]
+color = [255, 255, 255, 255]
+font = "resources/fonts/SourceCodePro-Regular.ttf"
+size = 32
+xywh = [0, 0.06, 0.993, 1]
+origin = "all"
+layer = 5
+[playfield.combo]
+class = "ScoreDisplay"
+field = "combo"
+format = "%d"
+align = ["center", "center"]
+color = [255, 255, 255, 95]
+font = "resources/fonts/SourceCodePro-Bold.ttf"
+size = 240
+xywh = [0, 0, 480, 461]
+origin = "lane"
+layer = 5
+[playfield.timegate]
+class = "ScoreDisplay"
+field = "timegate"
+format = "%s"
+align = ["center", "center"]
+color = [255, 255, 255, 255]
+font = "resources/fonts/SourceCodePro-Regular.ttf"
+size = 28
+xywh = [0, 0, 480, 475]
+origin = "lane"
+layer = 5
+[playfield.accuracyGraph]
+class = "PointGraph"
+r = 1
+lineColor = [255, 255, 255, 127]
+color = [127, 127, 127, 255]
+xywh = [0, 120, 480, 240]
+origin = "lane"
+layer = 0
+counterPath = "hits.lua"
+[playfield.progressBar]
+class = "ProgressBar"
+color = [255, 255, 255, 255]
+direction = "left-right"
+mode = "+"
+xywh = [0, 0.995, 1, 0.005]
+origin = "all"
+layer = 0

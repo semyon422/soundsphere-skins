@@ -18,6 +18,12 @@
 		"path": "5key1scratch.toml"
 	},
 	{
+		"name": "soundsphere 5key1scratch1pedal circle noteskin toml",
+		"inputMode": "5key1pedal1scratch",
+		"type": "toml:simple-v3",
+		"path": "5key1scratch1pedal.toml"
+	},
+	{
 		"name": "soundsphere 6key circle noteskin toml",
 		"inputMode": "6key",
 		"type": "toml:simple-v3",
@@ -34,6 +40,12 @@
 		"inputMode": "7key1scratch",
 		"type": "toml:simple-v3",
 		"path": "7key1scratch.toml"
+	},
+	{
+		"name": "soundsphere 7key1scratch1pedal circle noteskin toml",
+		"inputMode": "7key1pedal1scratch",
+		"type": "toml:simple-v3",
+		"path": "7key1scratch1pedal.toml"
 	},
 	{
 		"name": "soundsphere 9key circle noteskin toml",

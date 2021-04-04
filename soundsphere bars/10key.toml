@@ -207,3 +207,10 @@ mode = "+"
 xywh = [0, 0.995, 1, 0.005]
 origin = "all"
 layer = 0
+[playfield.bottomBar]
+class = "StaticObject"
+color = [255, 255, 255, 63]
+xywh = [0, 450, 480, 30]
+origin = "lane"
+layer = 0
+image = "pixel.png"

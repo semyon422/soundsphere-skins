@@ -189,3 +189,11 @@ xywh = [206, 0, 188, 480]
 image = "black.png"
 origin = "lane"
 layer = 0
+[playfield.hpBar]
+class = "HpBar"
+color = [255, 255, 255, 255]
+direction = "down-up"
+mode = "+"
+xywh = [394, 0, 5, 600]
+origin = "lane"
+layer = 0

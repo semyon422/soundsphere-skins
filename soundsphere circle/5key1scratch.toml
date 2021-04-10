@@ -175,3 +175,11 @@ mode = "+"
 xywh = [0, 0.995, 1, 0.005]
 origin = "all"
 layer = 0
+[playfield.hpBar]
+class = "HpBar"
+color = [255, 255, 255, 255]
+direction = "down-up"
+mode = "+"
+xywh = [0, 0, 0.005, 1]
+origin = "all"
+layer = 0

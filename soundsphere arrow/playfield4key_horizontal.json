@@ -88,5 +88,14 @@
 		"released": "key/right0.png",
 		"pressed": "key/right1.png",
 		"cs": [0, 0, 0, 0, "h"]
+	},
+	{
+		"class": "HpBar",
+		"x": 0, "y": 0, "w": 0.005, "h": 1, "layer": 0,
+		"image": "down-up",
+		"cs": [0, 0, 0, 0, "all"],
+		"color": [255, 255, 255, 255],
+		"direction": "down-up",
+		"mode": "+"
 	}
 ]

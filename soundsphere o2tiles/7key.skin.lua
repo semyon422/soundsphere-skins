@@ -113,8 +113,8 @@ playfield:addBga({
 playfield:enableCamera()
 playfield:add({
 	class = "ImageView",
-	x = 206, y = 0, w = 188, h = 480,
-	transform = playfield:newLaneCenterTransform(600),
+	x = 5, y = 0, w = 188, h = 480,
+	transform = playfield:newNoteskinTransform(),
 	image = "black.png",
 })
 playfield:addNotes()

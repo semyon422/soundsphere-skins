@@ -32,8 +32,8 @@ noteskin:setColumns({
 
 noteskin:setTextures({
 	{pixel = "pixel.png"},
-	{note = "note/white.png"},
-	{bwhite = "body/white.png"},
+	{note = "body.png"},
+	{bwhite = "body.png"},
 })
 
 noteskin:setImages({

@@ -33,7 +33,7 @@ noteskin:setColumns({
 noteskin:setTextures({
 	{pixel = "pixel.png"},
 	{note = "body.png"},
-	{bwhite = "body.png"},
+	{body = "body.png"},
 })
 
 noteskin:setImages({
@@ -55,7 +55,7 @@ noteskin:setShortNote({
 		"note",
 		"note",
 	},
-	h = 48,
+	h = 24,
 })
 
 noteskin:setLongNote({
@@ -95,7 +95,7 @@ noteskin:setLongNote({
 		"note",
 		"note",
 	},
-	h = 48,
+	h = 24,
 })
 
 noteskin:addMeasureLine({
@@ -111,8 +111,8 @@ local playfield = BasePlayfield:new({
 playfield:enableCamera()
 playfield:addNotes()
 playfield:addKeyImages({
-	h = 480,
-	padding = 0,
+	h = 12,
+	padding = 30,
 	pressed = {
 		"key.png",
 		"key.png",

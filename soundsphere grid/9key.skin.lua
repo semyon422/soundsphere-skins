@@ -74,6 +74,14 @@ noteskin.notes = {
 	LongNote = LongNote,
 }
 
+noteskin:addBga({
+	x = 0,
+	y = 0,
+	w = 1,
+	h = 1,
+	color = {0.25, 0.25, 0.25, 1}
+})
+
 local playfield = BasePlayfield:new({
 	noteskin = noteskin
 })

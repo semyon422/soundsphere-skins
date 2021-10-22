@@ -82,10 +82,21 @@ noteskin:addMeasureLine({
 	image = "pixel"
 })
 
+noteskin:addBga({
+	x = 0,
+	y = 0,
+	w = 1,
+	h = 1,
+	color = {0.25, 0.25, 0.25, 1}
+})
+
 local playfield = BasePlayfield:new({
 	noteskin = noteskin
 })
 
+playfield:addBga({
+	transform = {{1 / 2, -16 / 9 / 2}, {0, -7 / 9 / 2}, 0, {0, 16 / 9}, {0, 16 / 9}, 0, 0, 0, 0}
+})
 playfield:enableCamera()
 playfield:addNotes()
 playfield:addKeyImages({

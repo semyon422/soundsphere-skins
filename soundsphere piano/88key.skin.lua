@@ -48,26 +48,26 @@ end
 
 noteskin:setTextures({
 	{measure = "white.png"},
-	{clear = "clear.png"},
-	{clearH = "clearH.png"},
 	{clearB = "clearB.png"},
-	{clearT = "clearT.png"},
-	{dark = "dark.png"},
-	{darkH = "darkH.png"},
 	{darkB = "darkB.png"},
+	{clearT = "clearT.png"},
 	{darkT = "darkT.png"},
+	{clearH = "clearH.png"},
+	{darkH = "darkH.png"},
+	{clear = "clear.png"},
+	{dark = "dark.png"},
 })
 
 noteskin:setImages({
 	measure = {"white"},
-	clear = {"clear"},
-	clearH = {"clearH"},
 	clearB = {"clearB"},
-	clearT = {"clearT"},
-	dark = {"dark"},
-	darkH = {"darkH"},
 	darkB = {"darkB"},
+	clearT = {"clearT"},
 	darkT = {"darkT"},
+	clearH = {"clearH"},
+	darkH = {"darkH"},
+	clear = {"clear"},
+	dark = {"dark"},
 })
 
 local short = {}

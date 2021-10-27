@@ -31,22 +31,22 @@ noteskin:setColumns({
 
 noteskin:setTextures({
 	{pixel = "pixel.png"},
-	{nwhite = "note/white.png"},
-	{ngreen = "note/green.png"},
-	{hwhite = "headtail/white.png"},
-	{hgreen = "headtail/green.png"},
 	{bwhite = "body/white.png"},
 	{bgreen = "body/green.png"},
+	{hwhite = "headtail/white.png"},
+	{hgreen = "headtail/green.png"},
+	{nwhite = "note/white.png"},
+	{ngreen = "note/green.png"},
 })
 
 noteskin:setImages({
 	pixel = {"pixel"},
-	nwhite = {"nwhite"},
-	ngreen = {"ngreen"},
-	hwhite = {"hwhite"},
-	hgreen = {"hgreen"},
 	bwhite = {"bwhite"},
 	bgreen = {"bgreen"},
+	hwhite = {"hwhite"},
+	hgreen = {"hgreen"},
+	nwhite = {"nwhite"},
+	ngreen = {"ngreen"},
 })
 
 noteskin:setShortNote({

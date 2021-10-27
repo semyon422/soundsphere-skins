@@ -28,28 +28,28 @@ noteskin:setColumns({
 
 noteskin:setTextures({
 	{pixel = "pixel.png"},
-	{nwhite = "note/white.png"},
-	{ngreen = "note/green.png"},
-	{norange = "note/orange.png"},
-	{hwhite = "headtail/white.png"},
-	{hgreen = "headtail/green.png"},
-	{horange = "headtail/orange.png"},
 	{bwhite = "body/white.png"},
 	{bgreen = "body/green.png"},
 	{borange = "body/orange.png"},
+	{hwhite = "headtail/white.png"},
+	{hgreen = "headtail/green.png"},
+	{horange = "headtail/orange.png"},
+	{nwhite = "note/white.png"},
+	{ngreen = "note/green.png"},
+	{norange = "note/orange.png"},
 })
 
 noteskin:setImages({
 	pixel = {"pixel"},
-	nwhite = {"nwhite"},
-	ngreen = {"ngreen"},
-	norange = {"norange"},
-	hwhite = {"hwhite"},
-	hgreen = {"hgreen"},
-	horange = {"horange"},
 	bwhite = {"bwhite"},
 	bgreen = {"bgreen"},
 	borange = {"borange"},
+	hwhite = {"hwhite"},
+	hgreen = {"hgreen"},
+	horange = {"horange"},
+	nwhite = {"nwhite"},
+	ngreen = {"ngreen"},
+	norange = {"norange"},
 })
 
 noteskin:setShortNote({

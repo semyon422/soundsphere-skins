@@ -26,14 +26,14 @@ noteskin:setColumns({
 
 noteskin:setTextures({
 	{pixel = "pixel.png"},
-	{note = "note.png"},
 	{body = "body.png"},
+	{note = "note.png"},
 })
 
 noteskin:setImages({
 	pixel = {"pixel"},
-	note = {"note"},
 	body = {"body"},
+	note = {"note"},
 })
 
 noteskin:setShortNote({

@@ -21,22 +21,22 @@ noteskin:setColumns({
 
 noteskin:setTextures({
 	{pixel = "pixel.png"},
+	{tail = "note2/tail.png"},
+	{body = "note2/body.png"},
 	{left = "note2/left.png"},
 	{down = "note2/down.png"},
 	{up = "note2/up.png"},
 	{right = "note2/right.png"},
-	{tail = "note2/tail.png"},
-	{body = "note2/body.png"},
 })
 
 noteskin:setImages({
 	pixel = {"pixel"},
+	body = {"body"},
+	tail = {"tail"},
 	left = {"left"},
 	down = {"down"},
 	up = {"up"},
 	right = {"right"},
-	tail = {"tail"},
-	body = {"body"},
 })
 
 noteskin:setShortNote({

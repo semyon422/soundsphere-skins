@@ -30,17 +30,17 @@ noteskin:setTextures({
 	{bwhite = "body/white.png"},
 	{bwhite_left = "body/white-left.png"},
 	{bwhite_right = "body/white-right.png"},
-	{bwhite_center = "body/white-center.png"},
+	{bwhite_middle = "body/white-middle.png"},
 
 	{hwhite = "headtail/white.png"},
 	{hwhite_left = "headtail/white-left.png"},
 	{hwhite_right = "headtail/white-right.png"},
-	{hwhite_center = "headtail/white-center.png"},
+	{hwhite_middle = "headtail/white-middle.png"},
 
 	{nwhite = "note/white.png"},
 	{nwhite_left = "note/white-left.png"},
 	{nwhite_right = "note/white-right.png"},
-	{nwhite_center = "note/white-center.png"},
+	{nwhite_middle = "note/white-middle.png"},
 })
 
 noteskin:setImages({
@@ -48,15 +48,15 @@ noteskin:setImages({
 	bwhite = {"bwhite"},
 	bwhite_left = {"bwhite_left"},
 	bwhite_right = {"bwhite_right"},
-	bwhite_center = {"bwhite_center"},
+	bwhite_middle = {"bwhite_middle"},
 	hwhite = {"hwhite"},
 	hwhite_left = {"hwhite_left"},
 	hwhite_right = {"hwhite_right"},
-	hwhite_center = {"hwhite_center"},
+	hwhite_middle = {"hwhite_middle"},
 	nwhite = {"nwhite"},
 	nwhite_left = {"nwhite_left"},
 	nwhite_right = {"nwhite_right"},
-	nwhite_center = {"nwhite_center"},
+	nwhite_middle = {"nwhite_middle"},
 })
 
 local inputsCount = noteskin.inputsCount
@@ -67,19 +67,10 @@ local function getSuffix(chord, column)
 	elseif column > 1 and chord[column - 1] and not chord[column + 1] then
 		suffix = "_right"
 	elseif column > 1 and column < inputsCount and chord[column - 1] and chord[column + 1] then
-		suffix = "_center"
+		suffix = "_middle"
 	end
 	return suffix
 end
--- local function getSuffix2(startChord, endChord, column)
--- 	local startSuffix = getSuffix(startChord, column)
--- 	local endSuffix = getSuffix(endChord, column)
--- 	if startSuffix == "" or endSuffix == "" or startSuffix ~= endSuffix then
--- 		return ""
--- 	elseif startSuffix == endSuffix then
--- 		return startSuffix
--- 	end
--- end
 
 noteskin:setShortNote({
 	image = function(timeState, noteView, column) return "nwhite" .. getSuffix(noteView.startChord, column) end,

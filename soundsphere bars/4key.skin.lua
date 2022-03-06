@@ -30,11 +30,7 @@ noteskin:setTextures({
 	{note = "note.png"},
 })
 
-noteskin:setImages({
-	pixel = {"pixel"},
-	body = {"body"},
-	note = {"note"},
-})
+noteskin:setImagesAuto()
 
 noteskin:setShortNote({
 	image = {
@@ -67,6 +63,12 @@ noteskin:setLongNote({
 	},
 	h = 24,
 })
+
+noteskin:setShortNote({
+	image = "note",
+	h = 24,
+	color = {1, 0.25, 0.25, 1},
+}, "SoundNote")
 
 noteskin:addMeasureLine({
 	h = 2,

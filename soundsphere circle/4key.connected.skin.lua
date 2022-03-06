@@ -41,23 +41,10 @@ noteskin:setTextures({
 	{nwhite_left = "note/white-left.png"},
 	{nwhite_right = "note/white-right.png"},
 	{nwhite_middle = "note/white-middle.png"},
+	{nred = "note/red.png"},
 })
 
-noteskin:setImages({
-	pixel = {"pixel"},
-	bwhite = {"bwhite"},
-	bwhite_left = {"bwhite_left"},
-	bwhite_right = {"bwhite_right"},
-	bwhite_middle = {"bwhite_middle"},
-	hwhite = {"hwhite"},
-	hwhite_left = {"hwhite_left"},
-	hwhite_right = {"hwhite_right"},
-	hwhite_middle = {"hwhite_middle"},
-	nwhite = {"nwhite"},
-	nwhite_left = {"nwhite_left"},
-	nwhite_right = {"nwhite_right"},
-	nwhite_middle = {"nwhite_middle"},
-})
+noteskin:setImagesAuto()
 
 local inputsCount = noteskin.inputsCount
 local function getSuffix(chord, column)
@@ -83,6 +70,12 @@ noteskin:setLongNote({
 	tail = function(timeState, noteView, column) return "hwhite" .. getSuffix(noteView.endChord, column) end,
 	h = 48,
 })
+
+noteskin:setShortNote({
+	image = "nred",
+	h = 48,
+	color = {1, 1, 1, 1},
+}, "SoundNote")
 
 noteskin:addMeasureLine({
 	h = 2,

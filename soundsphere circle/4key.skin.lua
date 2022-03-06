@@ -32,17 +32,10 @@ noteskin:setTextures({
 	{hgreen = "headtail/green.png"},
 	{nwhite = "note/white.png"},
 	{ngreen = "note/green.png"},
+	{nred = "note/red.png"},
 })
 
-noteskin:setImages({
-	pixel = {"pixel"},
-	bwhite = {"bwhite"},
-	bgreen = {"bgreen"},
-	hwhite = {"hwhite"},
-	hgreen = {"hgreen"},
-	nwhite = {"nwhite"},
-	ngreen = {"ngreen"},
-})
+noteskin:setImagesAuto()
 
 noteskin:setShortNote({
 	image = {
@@ -75,6 +68,12 @@ noteskin:setLongNote({
 	},
 	h = 48,
 })
+
+noteskin:setShortNote({
+	image = "nred",
+	h = 48,
+	color = {1, 1, 1, 1},
+}, "SoundNote")
 
 noteskin:addMeasureLine({
 	h = 2,

@@ -169,8 +169,7 @@ playfield:enableCamera()
 playfield:addNotes({
 	transform = tf
 })
-playfield:add({
-	class = "ImageView",
+playfield:addImageView({
 	x = -960, y = 1080 - 200, w = 1920, h = 200,
 	transform = tf,
 	image = "Piano.png",

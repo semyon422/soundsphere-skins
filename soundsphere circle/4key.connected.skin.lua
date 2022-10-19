@@ -59,15 +59,38 @@ local function getSuffix(chord, column)
 	return suffix
 end
 
+local noChord = {}
+local function getStartChord(noteView)
+	local chord = noteView.rhythmView.chords[noteView.graphicalNote.startNoteData.timePoint.absoluteTime]
+	return chord or noChord
+end
+local function getEndChord(noteView)
+	local chord = noteView.rhythmView.chords[noteView.graphicalNote.endNoteData.timePoint.absoluteTime]
+	return chord or noChord
+end
+local middleChord = {}
+local function getMiddleChord(noteView)
+	local startChord = getStartChord(noteView)
+	local endChord = getEndChord(noteView)
+	for i = 1, noteskin.inputsCount do
+		middleChord[i] = nil
+		if startChord[i] == "LongNoteStart" and endChord[i] == "LongNoteEnd" then
+			middleChord[i] = startChord[i]
+		end
+	end
+
+	return middleChord
+end
+
 noteskin:setShortNote({
-	image = function(timeState, noteView, column) return "nwhite" .. getSuffix(noteView.startChord, column) end,
+	image = function(timeState, noteView, column) return "nwhite" .. getSuffix(getStartChord(noteView), column) end,
 	h = 48,
 })
 
 noteskin:setLongNote({
-	head = function(timeState, noteView, column) return "hwhite" .. getSuffix(noteView.startChord, column) end,
-	body = function(timeState, noteView, column) return "bwhite" .. getSuffix(noteView.middleChord, column) end,
-	tail = function(timeState, noteView, column) return "hwhite" .. getSuffix(noteView.endChord, column) end,
+	head = function(timeState, noteView, column) return "hwhite" .. getSuffix(getStartChord(noteView), column) end,
+	body = function(timeState, noteView, column) return "bwhite" .. getSuffix(getMiddleChord(noteView), column) end,
+	tail = function(timeState, noteView, column) return "hwhite" .. getSuffix(getEndChord(noteView), column) end,
 	h = 48,
 })
 

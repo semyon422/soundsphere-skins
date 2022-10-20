@@ -84,16 +84,14 @@ playfield:addBga({
 playfield:enableCamera()
 for y = -half, half, size do
 	for x = -half, half, size do
-		playfield:add({
-			class = "ImageView",
+		playfield:addImageView({
 			x = x - 135, y = y - 135, w = 270, h = 270,
 			transform = tf,
 			image = "key.png",
 		})
 	end
 end
-playfield:add({
-	class = "RhythmView",
+playfield:addNotes({
 	transform = tf,
 })
 playfield:disableCamera()

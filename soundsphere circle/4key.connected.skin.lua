@@ -61,11 +61,11 @@ end
 
 local noChord = {}
 local function getStartChord(noteView)
-	local chord = noteView.rhythmView.chords[noteView.graphicalNote.startNoteData.timePoint.absoluteTime]
+	local chord = noteView.chords[noteView.graphicalNote.startNoteData.timePoint.absoluteTime]
 	return chord or noChord
 end
 local function getEndChord(noteView)
-	local chord = noteView.rhythmView.chords[noteView.graphicalNote.endNoteData.timePoint.absoluteTime]
+	local chord = noteView.chords[noteView.graphicalNote.endNoteData.timePoint.absoluteTime]
 	return chord or noChord
 end
 local middleChord = {}

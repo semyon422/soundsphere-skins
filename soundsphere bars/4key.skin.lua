@@ -1,7 +1,7 @@
 local NoteSkinVsrg = require("sphere.models.NoteSkinModel.NoteSkinVsrg")
 local BasePlayfield = require("sphere.models.NoteSkinModel.BasePlayfield")
 
-local noteskin = NoteSkinVsrg:new({
+local noteskin = NoteSkinVsrg({
 	path = ...,
 	name = "bar",
 	inputMode = "4key",
@@ -84,9 +84,7 @@ noteskin:addBga({
 	color = {0.25, 0.25, 0.25, 1}
 })
 
-local playfield = BasePlayfield:new({
-	noteskin = noteskin
-})
+local playfield = BasePlayfield(noteskin)
 
 
 playfield:addBga({

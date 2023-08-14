@@ -1,7 +1,7 @@
 local NoteSkinVsrg = require("sphere.models.NoteSkinModel.NoteSkinVsrg")
 local BasePlayfield = require("sphere.models.NoteSkinModel.BasePlayfield")
 
-local noteskin = NoteSkinVsrg:new({
+local noteskin = NoteSkinVsrg({
 	path = ...,
 	name = "arc exponential",
 	inputMode = "4key",
@@ -59,9 +59,7 @@ noteskin.notes = {
 	LongNote = LongNote,
 }
 
-local playfield = BasePlayfield:new({
-	noteskin = noteskin
-})
+local playfield = BasePlayfield(noteskin)
 
 local tf = {{1 / 2, 0}, {0, 1 / 2}, 0, {0, 1 / 1080}, {0, 1 / 1080}, 0, 0, 0, 0}
 

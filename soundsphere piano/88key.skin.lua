@@ -1,7 +1,7 @@
 local NoteSkinVsrg = require("sphere.models.NoteSkinModel.NoteSkinVsrg")
 local BasePlayfield = require("sphere.models.NoteSkinModel.BasePlayfield")
 
-local noteskin = NoteSkinVsrg:new({
+local noteskin = NoteSkinVsrg({
 	name = "piano",
 	inputMode = "88key",
 	range = {-1, 1},
@@ -158,9 +158,7 @@ noteskin:addMeasureLine({
 	image = "measure"
 })
 
-local playfield = BasePlayfield:new({
-	noteskin = noteskin
-})
+local playfield = BasePlayfield(noteskin)
 
 local tf = playfield:newFullTransform(1920, 1080)
 tf[1] = {1 / 2, 0}

@@ -46,7 +46,7 @@ noteskin:setTextures({
 
 noteskin:setImagesAuto()
 
-local inputsCount = noteskin.inputsCount
+local inputsCount = noteskin.columnsCount
 local function getSuffix(chord, column)
 	local suffix = ""
 	if column < inputsCount and not chord[column - 1] and chord[column + 1] then

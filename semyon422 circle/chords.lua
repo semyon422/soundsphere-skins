@@ -47,7 +47,8 @@ function chords.get_start_chord(noteView)
 
 	local sc = {}
 
-	for i, head in pairs(chord) do
+	for i, nds in pairs(chord) do
+		local head = nds[1]
 		if head.noteType == SN or head.noteType == LNS then
 			sc[i] = head
 		end
@@ -65,15 +66,16 @@ function chords.get_middle_chord(noteView)
 
 	local mc = {}
 
-	for i, head in pairs(sc) do
-		local tail = ec[i]
+	for i, nds in pairs(sc) do
+		local head = nds[1]
+		local tail = ec[i] and ec[i][1]
 		if tail and
 			head.noteType == LNS and tail.noteType == LNE and
 			head.timePoint.absoluteTime == startTime and
 			tail.timePoint.absoluteTime == endTime and
 			head.endNoteData == tail
 		then
-			mc[i] = ec[i]
+			mc[i] = tail
 		end
 	end
 

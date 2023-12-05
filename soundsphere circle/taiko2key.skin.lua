@@ -15,7 +15,7 @@ noteskin:setInput({
 	"key2",
 })
 
-local note_size = 56
+local note_size = 56 * 1.5
 
 noteskin:setColumns({
 	offset = 0,
@@ -31,38 +31,95 @@ noteskin:setColumns({
 
 noteskin:setTextures({
 	{pixel = "pixel.png"},
-	{bwhite = "body/white.png"},
-	{hwhite = "headtail/white.png"},
-	{nwhite = "note/white.png"},
+	{body = "body/white.png"},
+	{body_small = "body/white_small.png"},
+	{head = "headtail/white.png"},
+	{head_small = "headtail/white_small.png"},
+	{note = "note/white.png"},
+	{note_small = "note/white_small.png"},
 })
 
+local color_red = {1, 0.3, 0.22}
+local color_blue = {0.3, 0.65, 0.8}
+local color_purple = {0.53, 0.36, 0.80}
+local color_yellow = {0.94, 0.69, 0.04}
 noteskin:setImagesAuto({
-	nred = {"nwhite", color = {1, 0.3, 0.22}},
-	nblue = {"nwhite", color = {0.3, 0.65, 0.8}},
-	hyellow = {"hwhite", color = {0.94, 0.69, 0.04}},
-	byellow = {"bwhite", color = {0.94, 0.69, 0.04}},
+	note_1 = {"note_small", color = color_red},
+	note_1_double = {"note", color = color_red},
+	note_2 = {"note_small", color = color_blue},
+	note_2_double = {"note", color = color_blue},
+	note_3 = {"note_small", color = color_purple},
+	note_3_double = {"note", color = color_purple},
+	note_4_double = {"note", color = {0.8, 0.8, 0.8}},
+	head_0 = {"head_small", color = color_yellow},
+	head_0_double = {"head", color = color_yellow},
+	body_0 = {"body_small", color = color_yellow},
+	body_0_double = {"body", color = color_yellow},
 })
+
+local function get_note_image(_, noteView)
+	local noteData = noteView.graphicalNote.startNoteData
+
+	local postfix = ""
+	if noteData.isDouble then
+		postfix = "_double"
+	end
+
+	local i = noteView.graphicalNote.inputIndex
+	local chord = noteView.chords[noteData.timePoint.absoluteTime]
+	if not chord then
+		return "note_" .. i .. postfix
+	end
+
+	local noteDatas = chord[1]
+
+	if #noteDatas == 1 then
+		return "note_" .. i .. postfix
+	end
+
+	local both_small, both_large
+	both_small = not (noteDatas[1].isDouble or noteDatas[2].isDouble)
+	both_large = noteDatas[1].isDouble and noteDatas[2].isDouble
+	if both_small or both_large then
+		if i == 2 then
+			return "empty"
+		end
+		if both_large then
+			return "note_4_double"
+		end
+		return "note_3_double"
+	end
+
+	return "note_" .. i .. postfix
+end
 
 noteskin:setShortNote({
-	image = function(_, noteView)
-		if noteView.graphicalNote.inputIndex == 1 then
-			return "nred"
-		end
-		return "nblue"
-	end,
+	image = get_note_image,
 	h = note_size,
 })
 
 noteskin:setLongNote({
-	head = {
-		"hyellow",
-	},
-	body = {
-		"byellow",
-	},
-	tail = {
-		"hyellow",
-	},
+	head = function(_, noteView)
+		local postfix = ""
+		if noteView.graphicalNote.startNoteData.isDouble then
+			postfix = "_double"
+		end
+		return "head_0" .. postfix
+	end,
+	body = function(_, noteView)
+		local postfix = ""
+		if noteView.graphicalNote.startNoteData.isDouble then
+			postfix = "_double"
+		end
+		return "body_0" .. postfix
+	end,
+	tail = function(_, noteView)
+		local postfix = ""
+		if noteView.graphicalNote.startNoteData.isDouble then
+			postfix = "_double"
+		end
+		return "head_0" .. postfix
+	end,
 	h = note_size,
 })
 

@@ -1,8 +1,7 @@
 local NoteSkinVsrg = require("sphere.models.NoteSkinModel.NoteSkinVsrg")
 local BasePlayfield = require("sphere.models.NoteSkinModel.BasePlayfield")
 local JustConfig = require("sphere.JustConfig")
-
-local piano = {}
+local InputMode = require("ncdk.InputMode")
 
 local octave = {
 	{0, 1},
@@ -21,23 +20,33 @@ local octave = {
 
 local hitposition = 880
 
-function piano.createNoteskin(keys, start, root)
-	local config = JustConfig:fromFile(root .. "/piano.config.lua")
+local root = (...):match("(.+)/.-")
+local config = JustConfig:fromFile(root .. "/piano.config.lua")
 
-	local noteskin = NoteSkinVsrg({
-		name = "piano",
-		inputMode = keys .. "key",
-		range = {-1, 1},
-		unit = 1080,
-		hitposition = hitposition,
-		config = config
-	})
+local noteskin = NoteSkinVsrg({
+	name = "piano",
+	range = {-1, 1},
+	unit = 1080,
+	hitposition = hitposition,
+	config = config
+})
 
-	local input = {}
-	for i = 1, keys do
-		input[i] = "key" .. i
-	end
-	noteskin:setInput(input)
+local keys_starts = {
+	[76] = 5,
+	[88] = 10,
+}
+
+function noteskin.inputMode(inputMode)
+	return true
+end
+
+function noteskin:load(inputMode)
+	local im = InputMode(inputMode)
+	local keys = im:getColumns()
+
+	noteskin:setInput(im:getInputs())
+
+	local start = keys_starts[keys] or 1
 
 	local images = {}
 	for i = 0, keys - 1 do
@@ -111,17 +120,22 @@ function piano.createNoteskin(keys, start, root)
 
 	noteskin:setTextures({
 		{measure = ""},
-		{clearB = "clearB.png"},
-		{darkB = "darkB.png"},
-		{clearT = "clearT.png"},
-		{darkT = "darkT.png"},
-		{clearH = "clearH.png"},
-		{darkH = "darkH.png"},
-		{clear = "clear.png"},
-		{dark = "dark.png"},
+		{body15 = "body15.png"},
+		{tail15 = "note15.png"},
+		{note15 = "note15.png"},
+		{body = "body.png"},
+		{tail = "note.png"},
+		{note = "note.png"},
 	})
 
-	noteskin:setImagesAuto()
+	noteskin:setImagesAuto({
+		clear = {"note15"},
+		dark = {"note", color = {0, 0.5, 1, 1}},
+		clear_body = {"body15", color = {0.5, 0.5, 0.5, 1}},
+		dark_body = {"body", color = {0, 0.25, 0.5, 1}},
+		clear_tail = {"tail15", color = {0.5, 0.5, 0.5, 1}},
+		dark_tail = {"tail", color = {0, 0.25, 0.5, 1}},
+	})
 
 	local short = {}
 	for i, image in ipairs(images) do
@@ -129,22 +143,22 @@ function piano.createNoteskin(keys, start, root)
 	end
 	noteskin:setShortNote({
 		image = short,
-		h = 24,
+		h = 24 * scale,
 	})
 
 	local head = {}
 	local body = {}
 	local tail = {}
 	for i, image in ipairs(images) do
-		head[i] = image == 0 and "clearH" or "darkH"
-		body[i] = image == 0 and "clearB" or "darkB"
-		tail[i] = image == 0 and "clearT" or "darkT"
+		head[i] = image[1] == 0 and "clear" or "dark"
+		body[i] = image[1] == 0 and "clear_body" or "dark_body"
+		tail[i] = image[1] == 0 and "clear_tail" or "dark_tail"
 	end
 	noteskin:setLongNote({
 		head = head,
 		body = body,
 		tail = tail,
-		h = 24,
+		h = 24 * scale,
 	})
 
 	if config:get("measureLine") then
@@ -161,16 +175,24 @@ function piano.createNoteskin(keys, start, root)
 	tf[1] = {1 / 2, 0}
 
 	playfield:enableCamera()
+
+	local colors = {}
+	for i = 1, keys do
+		local o = (i + start - 1) % 12
+		if o == 1 or o == 3 or o == 5 then
+			colors[i] = {0.1, 0.1, 0.1, 1}
+		elseif o == 6 or o == 8 or o == 10 or o == 0 then
+			colors[i] = {0, 0, 0, 1}
+		else
+			colors[i] = {0, 0, 0, 0}
+		end
+	end
+	playfield:addColumnsBackground({
+		color = colors
+	})
+
 	playfield:addNotes({
 		transform = tf
-	})
-	playfield:addImageView({
-		x = -total_width / 2,
-		y = hitposition,
-		w = total_width,
-		h = 200,
-		transform = tf,
-		image = "background.png",
 	})
 	playfield:addKeyImages({
 		h = 200,
@@ -179,12 +201,27 @@ function piano.createNoteskin(keys, start, root)
 		released = keysReleased,
 		pressed = keysPressed,
 	})
+
+	local guidelines = {
+		y = {},
+		w = {},
+		h = {},
+		image = {},
+	}
+	for i = 1, keys + 1 do
+		if (i + start - 2) % 12 == 0 then
+			guidelines.y[i] = 0
+			guidelines.w[i] = 1
+			guidelines.h[i] = noteskin.unit
+			guidelines.image[i] = "pixel.png"
+		end
+	end
+	playfield:addGuidelines(guidelines)
+
 	playfield:disableCamera()
 	if config:get("baseElements") then
 		playfield:addBaseElements()
 	end
-
-	return noteskin
 end
 
-return piano
+return noteskin

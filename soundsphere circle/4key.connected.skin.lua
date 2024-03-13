@@ -46,14 +46,14 @@ noteskin:setTextures({
 
 noteskin:setImagesAuto()
 
-local inputsCount = noteskin.columnsCount
+local columnsCount = noteskin.columnsCount
 local function getSuffix(chord, column)
 	local suffix = ""
-	if column < inputsCount and not chord[column - 1] and chord[column + 1] then
+	if column < columnsCount and not chord[column - 1] and chord[column + 1] then
 		suffix = "_left"
 	elseif column > 1 and chord[column - 1] and not chord[column + 1] then
 		suffix = "_right"
-	elseif column > 1 and column < inputsCount and chord[column - 1] and chord[column + 1] then
+	elseif column > 1 and column < columnsCount and chord[column - 1] and chord[column + 1] then
 		suffix = "_middle"
 	end
 	return suffix
@@ -72,7 +72,7 @@ local middleChord = {}
 local function getMiddleChord(noteView)
 	local startChord = getStartChord(noteView)
 	local endChord = getEndChord(noteView)
-	for i = 1, noteskin.inputsCount do
+	for i = 1, columnsCount do
 		middleChord[i] = nil
 		if startChord[i] == "LongNoteStart" and endChord[i] == "LongNoteEnd" then
 			middleChord[i] = startChord[i]

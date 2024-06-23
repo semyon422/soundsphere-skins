@@ -40,7 +40,7 @@ end
 
 local noChord = {}
 function chords.get_start_chord(noteView)
-	local chord = noteView.chords[noteView.graphicalNote.startNoteData.timePoint.absoluteTime]
+	local chord = noteView.chords[noteView.graphicalNote.startNote.visualPoint.point.absoluteTime]
 	if not chord then
 		return noChord
 	end
@@ -58,8 +58,8 @@ function chords.get_start_chord(noteView)
 end
 
 function chords.get_middle_chord(noteView)
-	local startTime = noteView.graphicalNote.startNoteData.timePoint.absoluteTime
-	local endTime = noteView.graphicalNote.endNoteData.timePoint.absoluteTime
+	local startTime = noteView.graphicalNote.startNote.visualPoint.point.absoluteTime
+	local endTime = noteView.graphicalNote.endNote.visualPoint.point.absoluteTime
 
 	local sc = noteView.chords[startTime] or noChord
 	local ec = noteView.chords[endTime] or noChord
@@ -71,9 +71,9 @@ function chords.get_middle_chord(noteView)
 		local tail = ec[i] and ec[i][1]
 		if tail and
 			head.noteType == LNS and tail.noteType == LNE and
-			head.timePoint.absoluteTime == startTime and
-			tail.timePoint.absoluteTime == endTime and
-			head.endNoteData == tail
+			head.visualPoint.point.absoluteTime == startTime and
+			tail.visualPoint.point.absoluteTime == endTime and
+			head.endNote == tail
 		then
 			mc[i] = tail
 		end

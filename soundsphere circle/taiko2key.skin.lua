@@ -58,28 +58,28 @@ noteskin:setImagesAuto({
 })
 
 local function get_note_image(_, noteView)
-	local noteData = noteView.graphicalNote.startNoteData
+	local note = noteView.graphicalNote.startNote
 
 	local postfix = ""
-	if noteData.isDouble then
+	if note.isDouble then
 		postfix = "_double"
 	end
 
 	local i = noteView.graphicalNote.inputIndex
-	local chord = noteView.chords[noteData.timePoint.absoluteTime]
+	local chord = noteView.chords[note.visualPoint.point.absoluteTime]
 	if not chord then
 		return "note_" .. i .. postfix
 	end
 
-	local noteDatas = chord[1]
+	local notes = chord[1]
 
-	if #noteDatas == 1 then
+	if #notes == 1 then
 		return "note_" .. i .. postfix
 	end
 
 	local both_small, both_large
-	both_small = not (noteDatas[1].isDouble or noteDatas[2].isDouble)
-	both_large = noteDatas[1].isDouble and noteDatas[2].isDouble
+	both_small = not (notes[1].isDouble or notes[2].isDouble)
+	both_large = notes[1].isDouble and notes[2].isDouble
 	if both_small or both_large then
 		if i == 2 then
 			return "empty"
@@ -101,21 +101,21 @@ noteskin:setShortNote({
 noteskin:setLongNote({
 	head = function(_, noteView)
 		local postfix = ""
-		if noteView.graphicalNote.startNoteData.isDouble then
+		if noteView.graphicalNote.startNote.isDouble then
 			postfix = "_double"
 		end
 		return "head_0" .. postfix
 	end,
 	body = function(_, noteView)
 		local postfix = ""
-		if noteView.graphicalNote.startNoteData.isDouble then
+		if noteView.graphicalNote.startNote.isDouble then
 			postfix = "_double"
 		end
 		return "body_0" .. postfix
 	end,
 	tail = function(_, noteView)
 		local postfix = ""
-		if noteView.graphicalNote.startNoteData.isDouble then
+		if noteView.graphicalNote.startNote.isDouble then
 			postfix = "_double"
 		end
 		return "head_0" .. postfix

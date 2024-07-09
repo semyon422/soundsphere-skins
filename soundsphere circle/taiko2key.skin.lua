@@ -65,7 +65,7 @@ local function get_note_image(_, noteView)
 		postfix = "_double"
 	end
 
-	local i = noteView.graphicalNote.inputIndex
+	local i = noteView.graphicalNote.column:match("(%d+)$")
 	local chord = noteView.chords[note.visualPoint.point.absoluteTime]
 	if not chord then
 		return "note_" .. i .. postfix

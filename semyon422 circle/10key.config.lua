@@ -10,7 +10,8 @@ config.data = --[[data]] {
 	hitposition = 380,
 	measureLine = true,
 	mines = true,
-	upscroll = false
+	upscroll = false,
+	colorsnap = false
 } --[[/data]]
 
 function config:draw(w, h)
@@ -25,6 +26,7 @@ function config:draw(w, h)
 	data.upscroll = imgui.checkbox("upscroll", data.upscroll, "Upscroll")
 	data.measureLine = imgui.checkbox("measureLine", data.measureLine, "Measure line")
 	data.mines = imgui.checkbox("mines", data.mines, "Mines")
+	data.colorsnap = imgui.checkbox("colorsnap", data.colorsnap, "Colorsnap")
 
 	imgui.separator()
 	if imgui.button("Write config file", "Write") then

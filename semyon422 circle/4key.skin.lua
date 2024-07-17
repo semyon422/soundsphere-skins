@@ -1,5 +1,6 @@
 local NoteSkinVsrg = require("sphere.models.NoteSkinModel.NoteSkinVsrg")
 local JustConfig = require("sphere.JustConfig")
+local ColorSnap = require("sphere.ColorSnap")
 
 local root = (...):match("(.+)/.-")
 local config = JustConfig:fromFile(root .. "/4key.config.lua")
@@ -76,7 +77,12 @@ noteskin:setImagesAuto({
 local SN = "ShortNote"
 local LNS = "LongNoteStart"
 
+local is_colorsnap = config:get("colorsnap")
+
 local function getColor(c, column)
+	if is_colorsnap then
+		return ""
+	end
 	local count = 0
 	for k, v in pairs(c) do
 		if v.noteType == SN or v.noteType == LNS then
@@ -87,6 +93,16 @@ local function getColor(c, column)
 		return "_green"
 	end
 	return ""
+end
+
+local colorSnap = ColorSnap()
+local function color(timeState, noteView, column)
+	local orig_color = noteskin.color(timeState, noteView, column)
+	if not is_colorsnap then
+		return orig_color
+	end
+	local my_color = colorSnap:getColor(noteView.graphicalNote.startNote:getBeatModulo())
+	return noteskin:multiplyColors(my_color, orig_color)
 end
 
 if config:get("mines") then
@@ -104,6 +120,7 @@ noteskin:setShortNote({
 		return "note" .. getColor(chords.get_start_chord(noteView), column) .. chords.get_suffix(chords.get_start_chord(noteView), column)
 	end,
 	h = cs,
+	color = color,
 })
 
 noteskin:setLongNote({
@@ -117,6 +134,7 @@ noteskin:setLongNote({
 		return "tail" .. chords.get_suffix(chords.get_middle_chord(noteView), column)
 	end,
 	h = cs,
+	color = color,
 })
 
 if config:get("measureLine") then

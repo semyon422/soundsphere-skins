@@ -74,9 +74,6 @@ noteskin:setImagesAuto({
 	note_green_00 = {"note_00", color = {0.25, 1, 0.5, 1}},
 })
 
-local SN = "ShortNote"
-local LNS = "LongNoteStart"
-
 local is_colorsnap = config:get("colorsnap")
 
 local function getColor(c, column)
@@ -85,7 +82,7 @@ local function getColor(c, column)
 	end
 	local count = 0
 	for k, v in pairs(c) do
-		if v.noteType == SN or v.noteType == LNS then
+		if v.weight == 0 or v.weight == 1 then
 			count = count + 1
 		end
 	end

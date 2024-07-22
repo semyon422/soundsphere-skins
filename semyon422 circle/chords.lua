@@ -5,15 +5,15 @@ local LNS = "LongNoteStart"
 local LNE = "LongNoteEnd"
 
 local start_type_to_suffix = {
-	ShortNote = 1,
-	LongNoteStart = 2,
-	LongNoteEnd = 0,
+	[0] = 1,
+	[1] = 2,
+	[-1] = 0,
 }
 
 local end_type_to_suffix = {
-	ShortNote = 0,
-	LongNoteStart = 0,
-	LongNoteEnd = 3,
+	[0] = 0,
+	[1] = 0,
+	[-1] = 3,
 }
 
 function chords.get_suffix(c, column)
@@ -23,16 +23,16 @@ function chords.get_suffix(c, column)
 	end
 
 	local tts = start_type_to_suffix
-	if m.noteType == LNE then
+	if m.weight == -1 then
 		tts = end_type_to_suffix
 	end
 
 	local a, b = 0, 0
 	if l then
-		a = tts[l.noteType] or 0
+		a = tts[l.weight] or 0
 	end
 	if r then
-		b = tts[r.noteType] or 0
+		b = tts[r.weight] or 0
 	end
 
 	return "_" .. a .. b
@@ -49,7 +49,7 @@ function chords.get_start_chord(noteView)
 
 	for i, nds in pairs(chord) do
 		local head = nds[1]
-		if head.noteType == SN or head.noteType == LNS then
+		if head.weight == 0 or head.weight == 1 then
 			sc[i] = head
 		end
 	end
@@ -70,10 +70,10 @@ function chords.get_middle_chord(noteView)
 		local head = nds[1]
 		local tail = ec[i] and ec[i][1]
 		if tail and
-			head.noteType == LNS and tail.noteType == LNE and
+			head.weight == 1 and tail.weight == -1 and
 			head:getTime() == startTime and
-			tail:getTime() == endTime and
-			head.endNote == tail
+			tail:getTime() == endTime
+			-- head.endNote == tail
 		then
 			mc[i] = tail
 		end

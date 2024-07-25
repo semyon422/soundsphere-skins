@@ -6,12 +6,12 @@ local config = JustConfig()
 
 config.data = --[[data]] {
 	autosave = true,
+	colorsnap = false,
 	columnSize = 38,
 	hitposition = 380,
 	measureLine = true,
 	mines = true,
-	upscroll = false,
-	colorsnap = false
+	upscroll = false
 } --[[/data]]
 
 function config:draw(w, h)

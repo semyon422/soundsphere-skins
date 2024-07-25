@@ -1,9 +1,5 @@
 local chords = {}
 
-local SN = "ShortNote"
-local LNS = "LongNoteStart"
-local LNE = "LongNoteEnd"
-
 local start_type_to_suffix = {
 	[0] = 1,
 	[1] = 2,
@@ -40,7 +36,8 @@ end
 
 local noChord = {}
 function chords.get_start_chord(noteView)
-	local chord = noteView.chords[noteView.graphicalNote.startNote:getTime()]
+	local startTime = noteView.graphicalNote.startNote:getTime()
+	local chord = noteView.chords[startTime]
 	if not chord then
 		return noChord
 	end
@@ -49,8 +46,8 @@ function chords.get_start_chord(noteView)
 
 	for i, nds in pairs(chord) do
 		local head = nds[1]
-		if head.weight == 0 or head.weight == 1 then
-			sc[i] = head
+		if head.startNote:getTime() == startTime then
+			sc[i] = head.startNote
 		end
 	end
 
@@ -69,13 +66,8 @@ function chords.get_middle_chord(noteView)
 	for i, nds in pairs(sc) do
 		local head = nds[1]
 		local tail = ec[i] and ec[i][1]
-		if tail and
-			head.weight == 1 and tail.weight == -1 and
-			head:getTime() == startTime and
-			tail:getTime() == endTime
-			-- head.endNote == tail
-		then
-			mc[i] = tail
+		if head == tail then
+			mc[i] = tail.endNote
 		end
 	end
 

@@ -19,7 +19,9 @@ return function(noteskin, options)
 	for i = 1, noteskin.columnsCount do
 		static_keys[i] = "key/key-middle-0.png"
 		keys[i] = "key/key-any-1.png"
-		lanes[i] = "key/light.png"
+		if not options.lanes_no_scratch or i > 1 and i < noteskin.columnsCount then
+			lanes[i] = "key/light.png"
+		end
 	end
 	static_keys[1] = "key/key-left-0.png"
 	static_keys[#static_keys] = "key/key-right-0.png"

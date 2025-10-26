@@ -34,9 +34,19 @@ function chords.get_suffix(c, column)
 	return "_" .. a .. b
 end
 
+local function getStartNote(noteView)
+	local note = noteView.graphicalNote or noteView
+	return note.startNote or note.linked_note.startNote
+end
+
+local function getEndNote(noteView)
+	local note = noteView.graphicalNote or noteView
+	return note.endNote or note.linked_note.endNote
+end
+
 local noChord = {}
 function chords.get_start_chord(noteView)
-	local startTime = noteView.graphicalNote.startNote:getTime()
+	local startTime = getStartNote(noteView):getTime()
 	local chord = noteView.chords[startTime]
 	if not chord then
 		return noChord
@@ -46,8 +56,8 @@ function chords.get_start_chord(noteView)
 
 	for i, nds in pairs(chord) do
 		local head = nds[1]
-		if head.startNote:getTime() == startTime then
-			sc[i] = head.startNote
+		if getStartNote(head):getTime() == startTime then
+			sc[i] = getStartNote(head)
 		end
 	end
 
@@ -55,8 +65,8 @@ function chords.get_start_chord(noteView)
 end
 
 function chords.get_middle_chord(noteView)
-	local startTime = noteView.graphicalNote.startNote:getTime()
-	local endTime = noteView.graphicalNote.endNote:getTime()
+	local startTime = getStartNote(noteView):getTime()
+	local endTime = getEndNote(noteView):getTime()
 
 	local sc = noteView.chords[startTime] or noChord
 	local ec = noteView.chords[endTime] or noChord
@@ -67,7 +77,7 @@ function chords.get_middle_chord(noteView)
 		local head = nds[1]
 		local tail = ec[i] and ec[i][1]
 		if head == tail then
-			mc[i] = tail.endNote
+			mc[i] = getEndNote(tail)
 		end
 	end
 

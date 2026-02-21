@@ -58,15 +58,17 @@ noteskin:setImagesAuto({
 })
 
 local function get_note_image(_, noteView)
-	local note = noteView.graphicalNote.startNote
+	local note = noteView.graphicalNote.linked_note
+	local startNote = note.startNote
 
 	local postfix = ""
-	if note.isDouble then
+	if startNote.isDouble then
 		postfix = "_double"
 	end
 
-	local i = noteView.graphicalNote.column:match("(%d+)$")
-	local chord = noteView.chords[note:getTime()]
+	local column = noteView.column or noteView.graphicalNote:getColumn()
+	local i = tostring(column):match("(%d+)$")
+	local chord = noteView.chords[startNote:getTime()]
 	if not chord then
 		return "note_" .. i .. postfix
 	end
@@ -100,22 +102,25 @@ noteskin:setShortNote({
 
 noteskin:setLongNote({
 	head = function(_, noteView)
+		local note = noteView.graphicalNote.linked_note
 		local postfix = ""
-		if noteView.graphicalNote.startNote.isDouble then
+		if note.startNote.isDouble then
 			postfix = "_double"
 		end
 		return "head_0" .. postfix
 	end,
 	body = function(_, noteView)
+		local note = noteView.graphicalNote.linked_note
 		local postfix = ""
-		if noteView.graphicalNote.startNote.isDouble then
+		if note.startNote.isDouble then
 			postfix = "_double"
 		end
 		return "body_0" .. postfix
 	end,
 	tail = function(_, noteView)
+		local note = noteView.graphicalNote.linked_note
 		local postfix = ""
-		if noteView.graphicalNote.startNote.isDouble then
+		if note.startNote.isDouble then
 			postfix = "_double"
 		end
 		return "head_0" .. postfix

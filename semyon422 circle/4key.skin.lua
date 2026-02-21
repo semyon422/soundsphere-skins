@@ -98,7 +98,7 @@ local function color(timeState, noteView, column)
 	if not is_colorsnap then
 		return orig_color
 	end
-	local my_color = colorSnap:getColor(noteView.graphicalNote.startNote:getBeatModulo())
+	local my_color = colorSnap:getColor(noteView.graphicalNote.linked_note.startNote:getBeatModulo())
 	return noteskin:multiplyColors(my_color, orig_color)
 end
 

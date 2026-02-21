@@ -36,12 +36,12 @@ end
 
 local function getStartNote(noteView)
 	local note = noteView.graphicalNote or noteView
-	return note.startNote or note.linked_note.startNote
+	return note.linked_note.startNote
 end
 
 local function getEndNote(noteView)
 	local note = noteView.graphicalNote or noteView
-	return note.endNote or note.linked_note.endNote
+	return note.linked_note.endNote or note.linked_note.startNote
 end
 
 local noChord = {}
@@ -55,9 +55,14 @@ function chords.get_start_chord(noteView)
 	local sc = {}
 
 	for i, nds in pairs(chord) do
-		local head = nds[1]
-		if getStartNote(head):getTime() == startTime then
-			sc[i] = getStartNote(head)
+		local visual_note = nds[1]
+		local note = visual_note.linked_note
+		local startNote = note.startNote
+		local endNote = note.endNote
+		if startNote:getTime() == startTime then
+			sc[i] = startNote
+		elseif endNote and endNote:getTime() == startTime then
+			sc[i] = endNote
 		end
 	end
 
@@ -65,8 +70,13 @@ function chords.get_start_chord(noteView)
 end
 
 function chords.get_middle_chord(noteView)
-	local startTime = getStartNote(noteView):getTime()
-	local endTime = getEndNote(noteView):getTime()
+	local note = noteView.graphicalNote.linked_note
+	local startTime = note.startNote:getTime()
+	local endNote = note.endNote
+	if not endNote then
+		return noChord
+	end
+	local endTime = endNote:getTime()
 
 	local sc = noteView.chords[startTime] or noChord
 	local ec = noteView.chords[endTime] or noChord
@@ -77,7 +87,7 @@ function chords.get_middle_chord(noteView)
 		local head = nds[1]
 		local tail = ec[i] and ec[i][1]
 		if head == tail then
-			mc[i] = getEndNote(tail)
+			mc[i] = head.linked_note.endNote
 		end
 	end
 

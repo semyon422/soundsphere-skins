@@ -61,11 +61,13 @@ end
 
 local noChord = {}
 local function getStartChord(noteView)
-	local chord = noteView.chords[noteView.graphicalNote.startNote:getTime()]
+	local chord = noteView.chords[noteView.graphicalNote.linked_note.startNote:getTime()]
 	return chord or noChord
 end
 local function getEndChord(noteView)
-	local chord = noteView.chords[noteView.graphicalNote.endNote:getTime()]
+	local note = noteView.graphicalNote.linked_note
+	local endNote = note.endNote or note.startNote
+	local chord = noteView.chords[endNote:getTime()]
 	return chord or noChord
 end
 local middleChord = {}
@@ -74,7 +76,7 @@ local function getMiddleChord(noteView)
 	local endChord = getEndChord(noteView)
 	for i = 1, columnsCount do
 		middleChord[i] = nil
-		if startChord[i] == "LongNoteStart" and endChord[i] == "LongNoteEnd" then
+		if type(startChord[i]) == "table" and type(endChord[i]) == "table" then
 			middleChord[i] = startChord[i]
 		end
 	end
